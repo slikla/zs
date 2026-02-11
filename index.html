@@ -288,10 +288,10 @@
                     },
                     body: JSON.stringify({
                         model: 'claude-sonnet-4-20250514',
-                        max_tokens: 1000,
+                        max_tokens: 5000,
                         messages: [{
                             role: 'user',
-                            content: `Generer 3 tilfældige ${theme === 'names' ? 'moderne danske fornavne (MINDST 7 bogstaver)' : theme === 'mammals' ? 'pattedyr (kun pattedyr - ingen fugle, fisk eller reptiler)' : theme === 'mixed' ? 'ord fra forskellige temaer (pattedyr, moderne danske fornavne 7+ bogstaver, astronomi, mad, EU byer, design stilarter, dating/romantik, romantasy, erotik/undertøj)' : 'danske ord fra ' + themes[theme].name + ' temaet'}.
+                            content: `Generer 5 tilfældige ${theme === 'names' ? 'moderne danske fornavne (MINDST 7 bogstaver)' : theme === 'mammals' ? 'pattedyr (kun pattedyr - ingen fugle, fisk eller reptiler)' : theme === 'mixed' ? 'ord fra forskellige temaer (pattedyr, moderne danske fornavne 7+ bogstaver, astronomi, mad, EU byer, design stilarter, dating/romantik, romantasy, erotik/undertøj)' : 'danske ord fra ' + themes[theme].name + ' temaet'}.
 
 ${theme === 'names' ? 'For hvert navn skal du give:\n1. Navnet (moderne dansk fornavn med MINDST 7 bogstaver)\n2. Type: "Fornavn"\n3. Navnets betydning og oprindelse (1-2 sætninger)\n4. En sætning om en person med dette navn (eksempel: "Caroline er kendt for sin kreativitet")' : 'For hvert ord skal du give:\n1. Ordet selv (på dansk)\n2. Ordklasse (substantiv, verbum, adjektiv osv.)\n3. En kort, præcis definition (1-2 sætninger)\n4. En naturlig eksempelsætning der bruger ordet'}
 
