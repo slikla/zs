@@ -1,0 +1,22 @@
+[
+  {"ord": "abstrakt", "forklaring": "Noget der ikke er konkret eller håndgribeligt"},
+  {"ord": "konkret", "forklaring": "Noget der kan ses og berøres"},
+  {"ord": "analysere", "forklaring": "At undersøge noget i detaljer for at forstå det"},
+  {"ord": "syntese", "forklaring": "At samle dele for at skabe en helhed"},
+  {"ord": "kritisk", "forklaring": "At vurdere noget med omhu og refleksion"},
+  {"ord": "hypotese", "forklaring": "En foreløbig forklaring der kan testes"},
+  {"ord": "variabel", "forklaring": "Noget der kan ændre sig i et eksperiment"},
+  {"ord": "konklusion", "forklaring": "Resultatet af en undersøgelse eller analyse"},
+  {"ord": "teori", "forklaring": "En systematisk forklaring på fænomener"},
+  {"ord": "metode", "forklaring": "En plan eller fremgangsmåde til at løse et problem"},
+  {"ord": "data", "forklaring": "Fakta eller oplysninger, der kan analyseres"},
+  {"ord": "forskning", "forklaring": "Systematisk indsamling af viden"},
+  {"ord": "observation", "forklaring": "At se og notere fænomener nøje"},
+  {"ord": "eksperiment", "forklaring": "En test for at undersøge en hypotese"},
+  {"ord": "statistik", "forklaring": "Tal og analyser der viser mønstre"},
+  {"ord": "logik", "forklaring": "Ræsonnement baseret på regler og sammenhænge"},
+  {"ord": "definition", "forklaring": "En forklaring af betydningen af et ord"},
+  {"ord": "argument", "forklaring": "En grund til at støtte en påstand"},
+  {"ord": "perspektiv", "forklaring": "En måde at se eller forstå noget på"},
+  {"ord": "begreb", "forklaring": "En idé eller tanke om noget"}
+]
