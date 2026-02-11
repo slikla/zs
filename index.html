@@ -11,821 +11,809 @@
             padding: 0;
             box-sizing: border-box;
         }
-```
-    :root {
-        --nord-bg: #ECEFF4;
-        --nord-surface: #E5E9F0;
-        --nord-dark: #2E3440;
-        --nord-frost: #5E81AC;
-        --nord-green: #A3BE8C;
-        --nord-red: #BF616A;
-        --nord-yellow: #EBCB8B;
-        --nord-purple: #B48EAD;
-        --nord-orange: #D08770;
-    }
-    body {
-        font-family: 'IBM Plex Sans', sans-serif;
-        background: var(--nord-bg);
-        color: var(--nord-dark);
-        line-height: 1.6;
-        padding: 2rem 1rem;
-    }
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .firebase-status {
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        padding: 0.5rem 1rem;
-        border-radius: 8px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .firebase-status.connected {
-        background: var(--nord-green);
-        color: white;
-    }
-    .firebase-status.disconnected {
-        background: var(--nord-red);
-        color: white;
-    }
-    .firebase-status.loading {
-        background: var(--nord-yellow);
-        color: var(--nord-dark);
-    }
-    header {
-        text-align: center;
-        margin-bottom: 3rem;
-        animation: fadeInDown 0.6s ease-out;
-    }
-    h1 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 3rem;
-        color: var(--nord-dark);
-        margin-bottom: 0.5rem;
-        letter-spacing: -0.02em;
-    }
-    .subtitle {
-        font-size: 1.1rem;
-        color: var(--nord-frost);
-        font-weight: 300;
-    }
-    .emoji-banner {
-        font-size: 2.5rem;
-        margin: 1rem 0;
-        animation: bounce 2s ease-in-out infinite;
-    }
-    .cloud-badge {
-        display: inline-block;
-        background: linear-gradient(135deg, var(--nord-frost), var(--nord-purple));
-        color: white;
-        padding: 0.3rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        margin-left: 0.5rem;
-    }
-    /* Tabs */
-    .tabs {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid var(--nord-surface);
-        animation: fadeIn 0.6s ease-out;
-        flex-wrap: wrap;
-    }
-    .tab {
-        background: none;
-        border: none;
-        padding: 1rem 1.5rem;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--nord-frost);
-        cursor: pointer;
-        border-bottom: 3px solid transparent;
-        transition: all 0.2s;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .tab:hover {
-        color: var(--nord-dark);
-        background: rgba(94, 129, 172, 0.05);
-    }
-    .tab.active {
-        color: var(--nord-dark);
-        border-bottom-color: var(--nord-frost);
-    }
-    .tab-content {
-        display: none;
-        animation: fadeInUp 0.4s ease-out;
-    }
-    .tab-content.active {
-        display: block;
-    }
-    /* Dashboard */
-    .dashboard {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    .dashboard-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        animation: fadeInUp 0.6s ease-out backwards;
-    }
-    .dashboard-card h3 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .event-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-    .event-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 0.8rem;
-        background: var(--nord-bg);
-        border-radius: 8px;
-        border-left: 4px solid var(--nord-frost);
-        transition: all 0.2s;
-    }
-    .event-item:hover {
-        transform: translateX(4px);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .event-item.macro {
-        border-left-color: var(--nord-red);
-    }
-    .event-item.report {
-        border-left-color: var(--nord-purple);
-    }
-    .event-item.earnings {
-        border-left-color: var(--nord-green);
-    }
-    .event-date {
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: var(--nord-frost);
-        min-width: 80px;
-    }
-    .event-details {
-        flex: 1;
-    }
-    .event-title {
-        font-weight: 600;
-        color: var(--nord-dark);
-        margin-bottom: 0.2rem;
-    }
-    .event-subtitle {
-        font-size: 0.85rem;
-        color: var(--nord-frost);
-    }
-    .event-emoji {
-        font-size: 1.5rem;
-    }
-    /* Calendar */
-    .calendar-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-    .calendar-header {
-        text-align: center;
-        font-weight: 600;
-        font-size: 0.85rem;
-        color: var(--nord-frost);
-        padding: 0.5rem;
-    }
-    .calendar-day {
-        aspect-ratio: 1;
-        background: white;
-        border-radius: 8px;
-        padding: 0.5rem;
-        font-size: 0.9rem;
-        position: relative;
-        cursor: pointer;
-        transition: all 0.2s;
-        border: 2px solid transparent;
-    }
-    .calendar-day:hover {
-        border-color: var(--nord-frost);
-        transform: scale(1.05);
-    }
-    .calendar-day.other-month {
-        opacity: 0.3;
-    }
-    .calendar-day.today {
-        background: var(--nord-frost);
-        color: white;
-        font-weight: 600;
-    }
-    .calendar-day.has-event {
-        background: linear-gradient(to bottom, white 70%, var(--nord-yellow) 70%);
-    }
-    .calendar-day.has-macro {
-        background: linear-gradient(to bottom, white 70%, var(--nord-red) 70%);
-    }
-    .calendar-day.has-report {
-        background: linear-gradient(to bottom, white 70%, var(--nord-purple) 70%);
-    }
-    .calendar-day.has-multiple {
-        background: linear-gradient(135deg, var(--nord-red) 0%, var(--nord-purple) 50%, var(--nord-green) 100%);
-        color: white;
-        font-weight: 600;
-    }
-    .calendar-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-    .calendar-nav h3 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 1.5rem;
-    }
-    .calendar-nav-btns {
-        display: flex;
-        gap: 0.5rem;
-    }
-    .nav-btn {
-        background: var(--nord-surface);
-        color: var(--nord-dark);
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.2s;
-        font-weight: 600;
-    }
-    .nav-btn:hover {
-        background: var(--nord-frost);
-        color: white;
-    }
-    /* Forms */
-    .add-section {
-        background: white;
-        padding: 2rem;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        margin-bottom: 2rem;
-        animation: fadeInUp 0.6s ease-out 0.2s backwards;
-    }
-    .add-section h2 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .form-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-    .form-group {
-        display: flex;
-        flex-direction: column;
-    }
-    .form-group.full-width {
-        grid-column: 1 / -1;
-    }
-    label {
-        font-size: 0.85rem;
-        font-weight: 600;
-        color: var(--nord-frost);
-        margin-bottom: 0.3rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-    input, textarea, select {
-        padding: 0.75rem;
-        border: 2px solid var(--nord-surface);
-        border-radius: 8px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 1rem;
-        transition: all 0.2s;
-        background: white;
-    }
-    input:focus, textarea:focus, select:focus {
-        outline: none;
-        border-color: var(--nord-frost);
-        box-shadow: 0 0 0 3px rgba(94, 129, 172, 0.1);
-    }
-    textarea {
-        resize: vertical;
-        min-height: 80px;
-    }
-    button {
-        background: var(--nord-frost);
-        color: white;
-        border: none;
-        padding: 0.9rem 1.8rem;
-        border-radius: 8px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    button:hover {
-        background: #4C6A92;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(94, 129, 172, 0.3);
-    }
-    button:active {
-        transform: translateY(0);
-    }
-    button:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
-    /* Stock Cards */
-    .stocks-list {
-        display: grid;
-        gap: 1.5rem;
-    }
-    .stock-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        position: relative;
-        overflow: hidden;
-        transition: all 0.3s;
-        animation: fadeInUp 0.6s ease-out backwards;
-    }
-    .stock-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-    }
-    .stock-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, var(--nord-frost), var(--nord-purple));
-    }
-    .stock-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 1rem;
-    }
-    .stock-title {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-    }
-    .stock-emoji {
-        font-size: 2.5rem;
-        animation: wiggle 3s ease-in-out infinite;
-    }
-    .stock-card:nth-child(even) .stock-emoji {
-        animation-delay: 1s;
-    }
-    .stock-info h3 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 1.5rem;
-        color: var(--nord-dark);
-        margin-bottom: 0.2rem;
-    }
-    .stock-ticker {
-        font-size: 0.85rem;
-        color: var(--nord-frost);
-        font-weight: 600;
-    }
-    .delete-btn {
-        background: transparent;
-        color: var(--nord-red);
-        padding: 0.5rem;
-        border-radius: 50%;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-    }
-    .delete-btn:hover {
-        background: rgba(191, 97, 106, 0.1);
-        transform: rotate(90deg);
-    }
-    .stock-details {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-    .detail-item {
-        background: var(--nord-bg);
-        padding: 0.8rem;
-        border-radius: 8px;
-    }
-    .detail-label {
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: var(--nord-frost);
-        font-weight: 600;
-        margin-bottom: 0.3rem;
-    }
-    .detail-value {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: var(--nord-dark);
-    }
-    .trend-up {
-        color: var(--nord-green);
-    }
-    .trend-down {
-        color: var(--nord-red);
-    }
-    .notes {
-        background: #FFF9E6;
-        border-left: 4px solid var(--nord-yellow);
-        padding: 1rem;
-        border-radius: 8px;
-        font-size: 0.95rem;
-        color: var(--nord-dark);
-    }
-    .legend {
-        display: flex;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        padding: 1rem;
-        background: var(--nord-bg);
-        border-radius: 8px;
-        margin-top: 1rem;
-    }
-    .legend-item {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.85rem;
-    }
-    .legend-color {
-        width: 20px;
-        height: 20px;
-        border-radius: 4px;
-    }
-    .empty-state {
-        text-align: center;
-        padding: 4rem 2rem;
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-    .empty-emoji {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-        animation: float 3s ease-in-out infinite;
-    }
-    .empty-state h3 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        color: var(--nord-dark);
-    }
-    .empty-state p {
-        color: var(--nord-frost);
-        font-size: 1.1rem;
-    }
-    /* Animations */
-    @keyframes fadeInDown {
-        from {
-            opacity: 0;
-            transform: translateY(-20px);
+
+        :root {
+            --nord-bg: #ECEFF4;
+            --nord-surface: #E5E9F0;
+            --nord-dark: #2E3440;
+            --nord-frost: #5E81AC;
+            --nord-green: #A3BE8C;
+            --nord-red: #BF616A;
+            --nord-yellow: #EBCB8B;
+            --nord-purple: #B48EAD;
+            --nord-orange: #D08770;
         }
-        to {
-            opacity: 1;
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: var(--nord-bg);
+            color: var(--nord-dark);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .firebase-status {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: opacity 0.3s;
+        }
+        .firebase-status.connected {
+            background: var(--nord-green);
+            color: white;
+        }
+        .firebase-status.disconnected {
+            background: var(--nord-red);
+            color: white;
+        }
+        .firebase-status.loading {
+            background: var(--nord-yellow);
+            color: var(--nord-dark);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.6s ease-out;
+        }
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3rem;
+            color: var(--nord-dark);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--nord-frost);
+            font-weight: 300;
+        }
+        .emoji-banner {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        .cloud-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--nord-frost), var(--nord-purple));
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--nord-surface);
+            animation: fadeIn 0.6s ease-out;
+            flex-wrap: wrap;
+        }
+        .tab {
+            background: none;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--nord-frost);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tab:hover {
+            color: var(--nord-dark);
+            background: rgba(94, 129, 172, 0.05);
+        }
+        .tab.active {
+            color: var(--nord-dark);
+            border-bottom-color: var(--nord-frost);
+        }
+        .tab-content {
+            display: none;
+            animation: fadeInUp 0.4s ease-out;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        /* Dashboard */
+        .dashboard {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .dashboard-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+        .dashboard-card h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .event-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem;
+            background: var(--nord-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--nord-frost);
+            transition: all 0.2s;
+        }
+        .event-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .event-item.macro {
+            border-left-color: var(--nord-red);
+        }
+        .event-item.report {
+            border-left-color: var(--nord-purple);
+        }
+        .event-item.earnings {
+            border-left-color: var(--nord-green);
+        }
+        .event-date {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--nord-frost);
+            min-width: 80px;
+        }
+        .event-details {
+            flex: 1;
+        }
+        .event-title {
+            font-weight: 600;
+            color: var(--nord-dark);
+            margin-bottom: 0.2rem;
+        }
+        .event-subtitle {
+            font-size: 0.85rem;
+            color: var(--nord-frost);
+        }
+        .event-emoji {
+            font-size: 1.5rem;
+        }
+        /* Calendar */
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .calendar-header {
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--nord-frost);
+            padding: 0.5rem;
+        }
+        .calendar-day {
+            aspect-ratio: 1;
+            background: white;
+            border-radius: 8px;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calendar-day:hover {
+            border-color: var(--nord-frost);
+            transform: scale(1.05);
+        }
+        .calendar-day.other-month {
+            opacity: 0.3;
+        }
+        .calendar-day.today {
+            background: var(--nord-frost);
+            color: white;
+            font-weight: 600;
+        }
+        .calendar-day.has-event {
+            background: linear-gradient(to bottom, white 70%, var(--nord-yellow) 70%);
+        }
+        .calendar-day.has-macro {
+            background: linear-gradient(to bottom, white 70%, var(--nord-red) 70%);
+        }
+        .calendar-day.has-report {
+            background: linear-gradient(to bottom, white 70%, var(--nord-purple) 70%);
+        }
+        .calendar-day.has-multiple {
+            background: linear-gradient(135deg, var(--nord-red) 0%, var(--nord-purple) 50%, var(--nord-green) 100%);
+            color: white;
+            font-weight: 600;
+        }
+        .calendar-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .calendar-nav h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+        }
+        .calendar-nav-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .nav-btn {
+            background: var(--nord-surface);
+            color: var(--nord-dark);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 600;
+        }
+        .nav-btn:hover {
+            background: var(--nord-frost);
+            color: white;
+        }
+        /* Forms */
+        .add-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.6s ease-out 0.2s backwards;
+        }
+        .add-section h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--nord-frost);
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        input, textarea, select {
+            padding: 0.75rem;
+            border: 2px solid var(--nord-surface);
+            border-radius: 8px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1rem;
+            transition: all 0.2s;
+            background: white;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--nord-frost);
+            box-shadow: 0 0 0 3px rgba(94, 129, 172, 0.1);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        button {
+            background: var(--nord-frost);
+            color: white;
+            border: none;
+            padding: 0.9rem 1.8rem;
+            border-radius: 8px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        button:hover {
+            background: #4C6A92;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(94, 129, 172, 0.3);
+        }
+        button:active {
             transform: translateY(0);
         }
-    }
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        /* Stock Cards */
+        .stocks-list {
+            display: grid;
+            gap: 1.5rem;
         }
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    @keyframes bounce {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-    }
-    @keyframes wiggle {
-        0%, 100% { transform: rotate(0deg); }
-        25% { transform: rotate(-5deg); }
-        75% { transform: rotate(5deg); }
-    }
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
-    }
-    @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.9; }
-    }
-    @media (max-width: 768px) {
-        h1 { font-size: 2rem; }
-        .tabs { overflow-x: auto; }
-        .form-grid { grid-template-columns: 1fr; }
-        .stock-details { grid-template-columns: 1fr; }
-        .dashboard { grid-template-columns: 1fr; }
-        .calendar-grid { gap: 0.2rem; }
-        .calendar-day { font-size: 0.75rem; padding: 0.3rem; }
-    }
-</style>
-```
+        .stock-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+        .stock-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .stock-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--nord-frost), var(--nord-purple));
+        }
+        .stock-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .stock-title {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .stock-emoji {
+            font-size: 2.5rem;
+            animation: wiggle 3s ease-in-out infinite;
+        }
+        .stock-card:nth-child(even) .stock-emoji {
+            animation-delay: 1s;
+        }
+        .stock-info h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            color: var(--nord-dark);
+            margin-bottom: 0.2rem;
+        }
+        .stock-ticker {
+            font-size: 0.85rem;
+            color: var(--nord-frost);
+            font-weight: 600;
+        }
+        .delete-btn {
+            background: transparent;
+            color: var(--nord-red);
+            padding: 0.5rem;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .delete-btn:hover {
+            background: rgba(191, 97, 106, 0.1);
+            transform: rotate(90deg);
+        }
+        .stock-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .detail-item {
+            background: var(--nord-bg);
+            padding: 0.8rem;
+            border-radius: 8px;
+        }
+        .detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--nord-frost);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+        .detail-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--nord-dark);
+        }
+        .trend-up {
+            color: var(--nord-green);
+        }
+        .trend-down {
+            color: var(--nord-red);
+        }
+        .notes {
+            background: #FFF9E6;
+            border-left: 4px solid var(--nord-yellow);
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: var(--nord-dark);
+        }
+        .legend {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            padding: 1rem;
+            background: var(--nord-bg);
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .empty-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        .empty-state h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--nord-dark);
+        }
+        .empty-state p {
+            color: var(--nord-frost);
+            font-size: 1.1rem;
+        }
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .tabs { overflow-x: auto; }
+            .form-grid { grid-template-columns: 1fr; }
+            .stock-details { grid-template-columns: 1fr; }
+            .dashboard { grid-template-columns: 1fr; }
+            .calendar-grid { gap: 0.2rem; }
+            .calendar-day { font-size: 0.75rem; padding: 0.3rem; }
+        }
+    </style>
 </head>
 <body>
     <div id="firebaseStatus" class="firebase-status loading">
         <span>⏳</span> Forbinder til Firebase...
     </div>
-```
-<div class="container">
-    <header>
-        <div class="emoji-banner">🦊 📈 🐻 💰</div>
-        <h1>Aktie-Zoo <span class="cloud-badge">☁️ CLOUD</span></h1>
-        <p class="subtitle">Dine investeringer synkroniserer magisk på tværs af enheder 🌱</p>
-    </header>
-    <div class="tabs">
-        <button class="tab active" onclick="switchTab('dashboard')">📊 Dashboard</button>
-        <button class="tab" onclick="switchTab('calendar')">📅 Kalender</button>
-        <button class="tab" onclick="switchTab('stocks')">🦊 Mine Aktier</button>
-        <button class="tab" onclick="switchTab('events')">⚡ Events</button>
-    </div>
-    <!-- Dashboard Tab -->
-    <div id="dashboard" class="tab-content active">
-        <div class="dashboard">
-            <div class="dashboard-card" style="animation-delay: 0.1s">
-                <h3>🔥 Næste 7 dage</h3>
-                <div id="upcomingEvents" class="event-list"></div>
-            </div>
-            <div class="dashboard-card" style="animation-delay: 0.2s">
-                <h3>📌 Hurtig statistik</h3>
-                <div class="stock-details">
-                    <div class="detail-item">
-                        <div class="detail-label">Aktier i zoo</div>
-                        <div class="detail-value" id="statsStocks">0</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Events total</div>
-                        <div class="detail-value" id="statsEvents">0</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Denne måned</div>
-                        <div class="detail-value" id="statsThisMonth">0</div>
-                    </div>
+
+    <div class="container">
+        <header>
+            <div class="emoji-banner">🦊 📈 🐻 💰</div>
+            <h1>Aktie-Zoo <span class="cloud-badge">☁️ CLOUD</span></h1>
+            <p class="subtitle">Dine investeringer synkroniserer magisk på tværs af enheder 🌱</p>
+        </header>
+
+        <div class="tabs">
+            <!-- ✅ FIX 1: 'event' sendes nu som parameter til switchTab -->
+            <button class="tab active" onclick="switchTab('dashboard', event)">📊 Dashboard</button>
+            <button class="tab" onclick="switchTab('calendar', event)">📅 Kalender</button>
+            <button class="tab" onclick="switchTab('stocks', event)">🦊 Mine Aktier</button>
+            <button class="tab" onclick="switchTab('events', event)">⚡ Events</button>
+        </div>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="dashboard">
+                <div class="dashboard-card" style="animation-delay: 0.1s">
+                    <h3>🔥 Næste 7 dage</h3>
+                    <div id="upcomingEvents" class="event-list"></div>
                 </div>
-            </div>
-        </div>
-        <div class="dashboard-card" style="animation-delay: 0.3s">
-            <h3>📆 Kommende begivenheder</h3>
-            <div id="allUpcomingEvents" class="event-list"></div>
-        </div>
-    </div>
-    <!-- Calendar Tab -->
-    <div id="calendar" class="tab-content">
-        <div class="dashboard-card">
-            <div class="calendar-nav">
-                <h3 id="calendarMonth">Februar 2026</h3>
-                <div class="calendar-nav-btns">
-                    <button class="nav-btn" onclick="changeMonth(-1)">← Forrige</button>
-                    <button class="nav-btn" onclick="changeMonth(0)">I dag</button>
-                    <button class="nav-btn" onclick="changeMonth(1)">Næste →</button>
+                <div class="dashboard-card" style="animation-delay: 0.2s">
+                    <h3>📌 Hurtig statistik</h3>
+                    <div class="stock-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Aktier i zoo</div>
+                            <div class="detail-value" id="statsStocks">0</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Events total</div>
+                            <div class="detail-value" id="statsEvents">0</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Denne måned</div>
+                            <div class="detail-value" id="statsThisMonth">0</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="calendar-grid">
-                <div class="calendar-header">Man</div>
-                <div class="calendar-header">Tir</div>
-                <div class="calendar-header">Ons</div>
-                <div class="calendar-header">Tor</div>
-                <div class="calendar-header">Fre</div>
-                <div class="calendar-header">Lør</div>
-                <div class="calendar-header">Søn</div>
-                <div id="calendarDays"></div>
-            </div>
-            <div class="legend">
-                <div class="legend-item">
-                    <div class="legend-color" style="background: var(--nord-red)"></div>
-                    <span>Makro-tal (renter, inflation, jobs)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: var(--nord-purple)"></div>
-                    <span>Årsrapporter</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: var(--nord-green)"></div>
-                    <span>Kvartalsrapporter</span>
-                </div>
+            <div class="dashboard-card" style="animation-delay: 0.3s">
+                <h3>📆 Kommende begivenheder</h3>
+                <div id="allUpcomingEvents" class="event-list"></div>
             </div>
         </div>
-    </div>
-    <!-- Stocks Tab -->
-    <div id="stocks" class="tab-content">
-        <div class="add-section">
-            <h2>🎯 Tilføj ny aktie til din zoo</h2>
-            <form id="stockForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="name">Selskabsnavn</label>
-                        <input type="text" id="name" placeholder="Novo Nordisk A/S" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="ticker">Ticker / Kode</label>
-                        <input type="text" id="ticker" placeholder="NOVO-B" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="price">Nuværende kurs (DKK)</label>
-                        <input type="number" id="price" step="0.01" placeholder="650.00">
-                    </div>
-                    <div class="form-group">
-                        <label for="change">Ændring (%)</label>
-                        <input type="number" id="change" step="0.01" placeholder="2.15">
-                    </div>
-                    <div class="form-group">
-                        <label for="emoji">Vælg dit frugtdyr 🦝</label>
-                        <select id="emoji">
-                            <option value="🦊">🦊 Ræv - Snu og lækkersulten</option>
-                            <option value="🐻">🐻 Bjørn - Bearish men sød</option>
-                            <option value="🦁">🦁 Løve - Konge af junglen</option>
-                            <option value="🐷">🐷 Gris - Sparesvinet</option>
-                            <option value="🦉">🦉 Ugle - Vis investor</option>
-                            <option value="🦘">🦘 Kænguru - Op og ned marked</option>
-                            <option value="🐂">🐂 Tyr - Bullish!</option>
-                            <option value="🦆">🦆 And - Calm på overfladen</option>
-                            <option value="🐌">🐌 Snegl - Langsom men stabil</option>
-                            <option value="🦋">🦋 Sommerfugl - Transformation</option>
-                        </select>
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="notes">Noter & Overvejelser</label>
-                        <textarea id="notes" placeholder="F.eks. 'Afventer årsregnskab. Potentiale hvis boligmarkedet vender. Godt udbytte på 4.6%.'"></textarea>
+
+        <!-- Calendar Tab -->
+        <div id="calendar" class="tab-content">
+            <div class="dashboard-card">
+                <div class="calendar-nav">
+                    <h3 id="calendarMonth">Februar 2026</h3>
+                    <div class="calendar-nav-btns">
+                        <button class="nav-btn" onclick="changeMonth(-1)">← Forrige</button>
+                        <button class="nav-btn" onclick="changeMonth(0)">I dag</button>
+                        <button class="nav-btn" onclick="changeMonth(1)">Næste →</button>
                     </div>
                 </div>
-                <button type="submit">➕ Tilføj til zoo</button>
-            </form>
-        </div>
-        <div id="stocksList" class="stocks-list"></div>
-    </div>
-    <!-- Events Tab -->
-    <div id="events" class="tab-content">
-        <div class="add-section">
-            <h2>⚡ Tilføj begivenhed</h2>
-            <form id="eventForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="eventTitle">Titel</label>
-                        <input type="text" id="eventTitle" placeholder="ECB Rentemøde" required>
+                <!-- ✅ FIX 2: Kalender-headers er nu i .calendar-grid, og dagene indsættes
+                     direkte via JS i samme grid (ikke inde i en wrapper-div) -->
+                <div class="calendar-grid" id="calendarGrid">
+                    <div class="calendar-header">Man</div>
+                    <div class="calendar-header">Tir</div>
+                    <div class="calendar-header">Ons</div>
+                    <div class="calendar-header">Tor</div>
+                    <div class="calendar-header">Fre</div>
+                    <div class="calendar-header">Lør</div>
+                    <div class="calendar-header">Søn</div>
+                </div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--nord-red)"></div>
+                        <span>Makro-tal (renter, inflation, jobs)</span>
                     </div>
-                    <div class="form-group">
-                        <label for="eventType">Type</label>
-                        <select id="eventType" required>
-                            <option value="macro">🔴 Makro-tal (renter, inflation, jobs)</option>
-                            <option value="report">🟣 Årsrapport</option>
-                            <option value="earnings">🟢 Kvartalsrapport</option>
-                        </select>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--nord-purple)"></div>
+                        <span>Årsrapporter</span>
                     </div>
-                    <div class="form-group">
-                        <label for="eventDate">Dato</label>
-                        <input type="date" id="eventDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="eventStock">Relateret aktie (valgfrit)</label>
-                        <select id="eventStock">
-                            <option value="">Ingen / Makro-event</option>
-                        </select>
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="eventNotes">Noter</label>
-                        <textarea id="eventNotes" placeholder="F.eks. 'Forventes rentesænkning på 0.25%'"></textarea>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--nord-green)"></div>
+                        <span>Kvartalsrapporter</span>
                     </div>
                 </div>
-                <button type="submit">➕ Tilføj event</button>
-            </form>
+            </div>
         </div>
-        <div class="dashboard-card">
-            <h3>📋 Alle events</h3>
-            <div id="allEventsList" class="event-list"></div>
+
+        <!-- Stocks Tab -->
+        <div id="stocks" class="tab-content">
+            <div class="add-section">
+                <h2>🎯 Tilføj ny aktie til din zoo</h2>
+                <form id="stockForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Selskabsnavn</label>
+                            <input type="text" id="name" placeholder="Novo Nordisk A/S" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ticker">Ticker / Kode</label>
+                            <input type="text" id="ticker" placeholder="NOVO-B" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Nuværende kurs (DKK)</label>
+                            <input type="number" id="price" step="0.01" placeholder="650.00">
+                        </div>
+                        <div class="form-group">
+                            <label for="change">Ændring (%)</label>
+                            <input type="number" id="change" step="0.01" placeholder="2.15">
+                        </div>
+                        <div class="form-group">
+                            <label for="emoji">Vælg dit frugtdyr 🦝</label>
+                            <select id="emoji">
+                                <option value="🦊">🦊 Ræv - Snu og lækkersulten</option>
+                                <option value="🐻">🐻 Bjørn - Bearish men sød</option>
+                                <option value="🦁">🦁 Løve - Konge af junglen</option>
+                                <option value="🐷">🐷 Gris - Sparesvinet</option>
+                                <option value="🦉">🦉 Ugle - Vis investor</option>
+                                <option value="🦘">🦘 Kænguru - Op og ned marked</option>
+                                <option value="🐂">🐂 Tyr - Bullish!</option>
+                                <option value="🦆">🦆 And - Calm på overfladen</option>
+                                <option value="🐌">🐌 Snegl - Langsom men stabil</option>
+                                <option value="🦋">🦋 Sommerfugl - Transformation</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="notes">Noter & Overvejelser</label>
+                            <textarea id="notes" placeholder="F.eks. 'Afventer årsregnskab. Potentiale hvis boligmarkedet vender. Godt udbytte på 4.6%.'"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">➕ Tilføj til zoo</button>
+                </form>
+            </div>
+            <div id="stocksList" class="stocks-list"></div>
+        </div>
+
+        <!-- Events Tab -->
+        <div id="events" class="tab-content">
+            <div class="add-section">
+                <h2>⚡ Tilføj begivenhed</h2>
+                <form id="eventForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="eventTitle">Titel</label>
+                            <input type="text" id="eventTitle" placeholder="ECB Rentemøde" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventType">Type</label>
+                            <select id="eventType" required>
+                                <option value="macro">🔴 Makro-tal (renter, inflation, jobs)</option>
+                                <option value="report">🟣 Årsrapport</option>
+                                <option value="earnings">🟢 Kvartalsrapport</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Dato</label>
+                            <input type="date" id="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventStock">Relateret aktie (valgfrit)</label>
+                            <select id="eventStock">
+                                <option value="">Ingen / Makro-event</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="eventNotes">Noter</label>
+                            <textarea id="eventNotes" placeholder="F.eks. 'Forventes rentesænkning på 0.25%'"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">➕ Tilføj event</button>
+                </form>
+            </div>
+            <div class="dashboard-card">
+                <h3>📋 Alle events</h3>
+                <div id="allEventsList" class="event-list"></div>
+            </div>
         </div>
     </div>
-</div>
-<!-- Firebase SDK -->
-<script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
-    import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
-    // ⚠️ VIGTIG: UDSKIFT MED DINE FIREBASE CREDENTIALS
-    // Få disse fra Firebase Console -> Project Settings -> General -> Your apps
-    const firebaseConfig = {
-  apiKey: "AIzaSyASVEhUGaJeutHF_nf7jmNXIyiA8lELRFI",
-  authDomain: "zoostock.firebaseapp.com",
-  databaseURL: "https://zoostock-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "zoostock",
-  storageBucket: "zoostock.firebasestorage.app",
-  messagingSenderId: "41957319686",
-  appId: "1:41957319686:web:a08a5450649cdd84064f87"
-};
-    // Initialize Firebase
-    let app, db;
-    let stocks = [];
-    let events = [];
-    let currentMonth = new Date();
-    let isFirebaseConnected = false;
-    try {
-        app = initializeApp(firebaseConfig);
-        db = getFirestore(app);
-        isFirebaseConnected = true;
-        updateFirebaseStatus('connected');
-        initializeFirebaseListeners();
-    } catch (error) {
-        console.error('Firebase fejl:', error);
-        updateFirebaseStatus('disconnected');
-        loadFromLocalStorage();
-    }
-    function updateFirebaseStatus(status) {
-        const statusEl = document.getElementById('firebaseStatus');
-        statusEl.className = `firebase-status ${status}`;
-        
-        if (status === 'connected') {
-            statusEl.innerHTML = '<span>✅</span> Forbundet til cloud';
-            setTimeout(() => {
-                statusEl.style.opacity = '0';
-                setTimeout(() => statusEl.style.display = 'none', 300);
-            }, 3000);
-        } else if (status === 'disconnected') {
-            statusEl.innerHTML = '<span>⚠️</span> Firebase ikke konfigureret - kører lokalt';
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
+        import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyASVEhUGaJeutHF_nf7jmNXIyiA8lELRFI",
+            authDomain: "zoostock.firebaseapp.com",
+            databaseURL: "https://zoostock-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "zoostock",
+            storageBucket: "zoostock.firebasestorage.app",
+            messagingSenderId: "41957319686",
+            appId: "1:41957319686:web:a08a5450649cdd84064f87"
+        };
+
+        let app, db;
+        let stocks = [];
+        let events = [];
+        let currentMonth = new Date();
+        let isFirebaseConnected = false;
+
+        try {
+            app = initializeApp(firebaseConfig);
+            db = getFirestore(app);
+            isFirebaseConnected = true;
+            updateFirebaseStatus('connected');
+            initializeFirebaseListeners();
+        } catch (error) {
+            console.error('Firebase fejl:', error);
+            updateFirebaseStatus('disconnected');
+            loadFromLocalStorage();
         }
-    }
-    // Firebase listeners
-    function initializeFirebaseListeners() {
-        if (!isFirebaseConnected) return;
-        // Listen to stocks
-        const stocksQuery = query(collection(db, 'stocks'), orderBy('createdAt', 'desc'));
-        onSnapshot(stocksQuery, (snapshot) => {
-            stocks = snapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            }));
-            renderStocks();
-            renderDashboard();
-            updateEventStockDropdown();
-        });
-        // Listen to events
-        const eventsQuery = query(collection(db, 'events'), orderBy('date', 'asc'));
-        onSnapshot(eventsQuery, (snapshot) => {
-            events = snapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            }));
-            renderDashboard();
-            renderAllEvents();
-            renderCalendar();
-        });
-    }
-    // LocalStorage fallback
-    function loadFromLocalStorage() {
-        stocks = JSON.parse(localStorage.getItem('aktieZoo') || '[]');
-        events = JSON.parse(localStorage.getItem('aktieZooEvents') || '[]');
-        
-        // Add default data if empty
-        if (stocks.length === 0) {
-            stocks = [
-                {
+
+        function updateFirebaseStatus(status) {
+            const statusEl = document.getElementById('firebaseStatus');
+            statusEl.className = `firebase-status ${status}`;
+
+            if (status === 'connected') {
+                statusEl.innerHTML = '<span>✅</span> Forbundet til cloud';
+                setTimeout(() => {
+                    statusEl.style.opacity = '0';
+                    setTimeout(() => statusEl.style.display = 'none', 300);
+                }, 3000);
+            } else if (status === 'disconnected') {
+                statusEl.innerHTML = '<span>⚠️</span> Firebase ikke konfigureret - kører lokalt';
+            }
+        }
+
+        function initializeFirebaseListeners() {
+            if (!isFirebaseConnected) return;
+
+            const stocksQuery = query(collection(db, 'stocks'), orderBy('createdAt', 'desc'));
+            onSnapshot(stocksQuery, (snapshot) => {
+                stocks = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                renderStocks();
+                renderDashboard();
+                updateEventStockDropdown();
+            });
+
+            const eventsQuery = query(collection(db, 'events'), orderBy('date', 'asc'));
+            onSnapshot(eventsQuery, (snapshot) => {
+                events = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                renderDashboard();
+                renderAllEvents();
+                renderCalendar();
+            });
+        }
+
+        function loadFromLocalStorage() {
+            stocks = JSON.parse(localStorage.getItem('aktieZoo') || '[]');
+            events = JSON.parse(localStorage.getItem('aktieZooEvents') || '[]');
+
+            if (stocks.length === 0) {
+                stocks = [{
                     id: 'local-' + Date.now(),
                     name: 'TCM Group A/S',
                     ticker: 'TCM',
@@ -833,278 +821,234 @@
                     change: 1.55,
                     emoji: '🦊',
                     notes: 'Afventer årsregnskab 26. feb. Potentiale hvis boligmarkedet vender.'
-                }
-            ];
-        }
-        
-        if (events.length === 0) {
-            events = [
-                {
+                }];
+            }
+
+            if (events.length === 0) {
+                events = [{
                     id: 'local-' + Date.now(),
                     title: 'TCM Group - Årsrapport 2025',
                     type: 'report',
                     date: '2026-02-26',
                     notes: 'Vigtig rapport'
-                }
-            ];
-        }
-        
-        renderStocks();
-        renderDashboard();
-        renderAllEvents();
-        updateEventStockDropdown();
-    }
-    function saveToLocalStorage() {
-        if (!isFirebaseConnected) {
-            localStorage.setItem('aktieZoo', JSON.stringify(stocks));
-            localStorage.setItem('aktieZooEvents', JSON.stringify(events));
-        }
-    }
-    // Add stock
-    window.stockForm = document.getElementById('stockForm');
-    stockForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const stock = {
-            name: document.getElementById('name').value,
-            ticker: document.getElementById('ticker').value.toUpperCase(),
-            price: parseFloat(document.getElementById('price').value) || 0,
-            change: parseFloat(document.getElementById('change').value) || 0,
-            emoji: document.getElementById('emoji').value,
-            notes: document.getElementById('notes').value,
-            createdAt: new Date().toISOString()
-        };
-        if (isFirebaseConnected) {
-            await addDoc(collection(db, 'stocks'), stock);
-        } else {
-            stock.id = 'local-' + Date.now();
-            stocks.push(stock);
-            saveToLocalStorage();
-            renderStocks();
-        }
-        
-        stockForm.reset();
-    });
-    // Add event
-    window.eventForm = document.getElementById('eventForm');
-    eventForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const event = {
-            title: document.getElementById('eventTitle').value,
-            type: document.getElementById('eventType').value,
-            date: document.getElementById('eventDate').value,
-            stockId: document.getElementById('eventStock').value || null,
-            notes: document.getElementById('eventNotes').value,
-            createdAt: new Date().toISOString()
-        };
-        if (isFirebaseConnected) {
-            await addDoc(collection(db, 'events'), event);
-        } else {
-            event.id = 'local-' + Date.now();
-            events.push(event);
-            saveToLocalStorage();
-            renderAllEvents();
-            renderDashboard();
-        }
-        
-        eventForm.reset();
-    });
-    // Delete functions
-    window.deleteStock = async (id) => {
-        if (!confirm('Er du sikker på du vil fjerne denne aktie? 🦝')) return;
-        
-        if (isFirebaseConnected) {
-            await deleteDoc(doc(db, 'stocks', id));
-            // Also delete related events
-            events.filter(e => e.stockId === id).forEach(async e => {
-                await deleteDoc(doc(db, 'events', e.id));
-            });
-        } else {
-            stocks = stocks.filter(s => s.id !== id);
-            events = events.filter(e => e.stockId !== id);
-            saveToLocalStorage();
+                }];
+            }
+
             renderStocks();
             renderDashboard();
-        }
-    };
-    window.deleteEvent = async (id) => {
-        if (!confirm('Vil du slette denne begivenhed?')) return;
-        
-        if (isFirebaseConnected) {
-            await deleteDoc(doc(db, 'events', id));
-        } else {
-            events = events.filter(e => e.id !== id);
-            saveToLocalStorage();
-            renderAllEvents();
-            renderDashboard();
-        }
-    };
-    // Tab switching
-    window.switchTab = (tabName) => {
-        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-        
-        event.target.classList.add('active');
-        document.getElementById(tabName).classList.add('active');
-        
-        if (tabName === 'calendar') renderCalendar();
-        else if (tabName === 'dashboard') renderDashboard();
-        else if (tabName === 'stocks') renderStocks();
-        else if (tabName === 'events') {
             renderAllEvents();
             updateEventStockDropdown();
         }
-    };
-    // Utility functions
-    function formatDate(dateStr) {
-        if (!dateStr) return 'Ikke planlagt';
-        const date = new Date(dateStr);
-        return date.toLocaleDateString('da-DK', { year: 'numeric', month: 'long', day: 'numeric' });
-    }
-    function formatDateShort(dateStr) {
-        const date = new Date(dateStr);
-        return date.toLocaleDateString('da-DK', { month: 'short', day: 'numeric' });
-    }
-    function getDaysUntil(dateStr) {
-        const date = new Date(dateStr);
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        date.setHours(0, 0, 0, 0);
-        return Math.ceil((date - today) / (1000 * 60 * 60 * 24));
-    }
-    // Render functions
-    function renderStocks() {
-        const container = document.getElementById('stocksList');
-        
-        if (stocks.length === 0) {
-            container.innerHTML = `
-                <div class="empty-state">
-                    <div class="empty-emoji">🦝</div>
-                    <h3>Din zoo er tom!</h3>
-                    <p>Tid til at tilføje nogle aktier 📈</p>
-                </div>
-            `;
-            return;
+
+        function saveToLocalStorage() {
+            if (!isFirebaseConnected) {
+                localStorage.setItem('aktieZoo', JSON.stringify(stocks));
+                localStorage.setItem('aktieZooEvents', JSON.stringify(events));
+            }
         }
-        
-        container.innerHTML = stocks.map((stock, index) => `
-            <div class="stock-card" style="animation-delay: ${index * 0.1}s">
-                <div class="stock-header">
-                    <div class="stock-title">
-                        <div class="stock-emoji">${stock.emoji}</div>
-                        <div class="stock-info">
-                            <h3>${stock.name}</h3>
-                            <div class="stock-ticker">${stock.ticker}</div>
-                        </div>
-                    </div>
-                    <button class="delete-btn" onclick="deleteStock('${stock.id}')" title="Fjern">✕</button>
-                </div>
-                
-                <div class="stock-details">
-                    <div class="detail-item">
-                        <div class="detail-label">Kurs</div>
-                        <div class="detail-value">${stock.price > 0 ? stock.price.toFixed(2) + ' DKK' : 'Ikke sat'}</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Ændring</div>
-                        <div class="detail-value ${stock.change >= 0 ? 'trend-up' : 'trend-down'}">
-                            ${stock.change >= 0 ? '▲' : '▼'} ${Math.abs(stock.change).toFixed(2)}%
-                        </div>
-                    </div>
-                </div>
-                
-                ${stock.notes ? `
-                    <div class="notes">
-                        <strong>📝 Noter:</strong><br>
-                        ${stock.notes}
-                    </div>
-                ` : ''}
-            </div>
-        `).join('');
-    }
-    function renderDashboard() {
-        const today = new Date();
-        const sevenDaysFromNow = new Date(today);
-        sevenDaysFromNow.setDate(today.getDate() + 7);
-        
-        const upcomingEvents = events
-            .filter(e => {
-                const eventDate = new Date(e.date);
-                return eventDate >= today && eventDate <= sevenDaysFromNow;
-            })
-            .sort((a, b) => new Date(a.date) - new Date(b.date));
-        
-        const allFutureEvents = events
-            .filter(e => new Date(e.date) >= today)
-            .sort((a, b) => new Date(a.date) - new Date(b.date))
-            .slice(0, 10);
-        
-        const upcomingContainer = document.getElementById('upcomingEvents');
-        if (upcomingEvents.length === 0) {
-            upcomingContainer.innerHTML = '<p style="color: var(--nord-frost); text-align: center; padding: 2rem;">Ingen events i de næste 7 dage 🌴</p>';
-        } else {
-            upcomingContainer.innerHTML = upcomingEvents.map(event => renderEventItem(event)).join('');
-        }
-        
-        const allContainer = document.getElementById('allUpcomingEvents');
-        allContainer.innerHTML = allFutureEvents.map(event => renderEventItem(event)).join('');
-        
-        document.getElementById('statsStocks').textContent = stocks.length;
-        document.getElementById('statsEvents').textContent = events.length;
-        
-        const thisMonthEvents = events.filter(e => {
-            const eventDate = new Date(e.date);
-            return eventDate.getMonth() === today.getMonth() && eventDate.getFullYear() === today.getFullYear();
+
+        // Add stock
+        document.getElementById('stockForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const stock = {
+                name: document.getElementById('name').value,
+                ticker: document.getElementById('ticker').value.toUpperCase(),
+                price: parseFloat(document.getElementById('price').value) || 0,
+                change: parseFloat(document.getElementById('change').value) || 0,
+                emoji: document.getElementById('emoji').value,
+                notes: document.getElementById('notes').value,
+                createdAt: new Date().toISOString()
+            };
+
+            if (isFirebaseConnected) {
+                await addDoc(collection(db, 'stocks'), stock);
+            } else {
+                stock.id = 'local-' + Date.now();
+                stocks.push(stock);
+                saveToLocalStorage();
+                renderStocks();
+            }
+            e.target.reset();
         });
-        document.getElementById('statsThisMonth').textContent = thisMonthEvents.length;
-    }
-    function renderEventItem(event) {
-        const stock = stocks.find(s => s.id === event.stockId);
-        const daysUntil = getDaysUntil(event.date);
-        
-        let dateText = formatDateShort(event.date);
-        if (daysUntil === 0) dateText = 'I DAG!';
-        else if (daysUntil === 1) dateText = 'I MORGEN';
-        else if (daysUntil > 0 && daysUntil <= 7) dateText = `Om ${daysUntil} dage`;
-        
-        const typeEmoji = {
-            'macro': '📊',
-            'report': '📄',
-            'earnings': '💰'
+
+        // Add event
+        document.getElementById('eventForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const evt = {
+                title: document.getElementById('eventTitle').value,
+                type: document.getElementById('eventType').value,
+                date: document.getElementById('eventDate').value,
+                stockId: document.getElementById('eventStock').value || null,
+                notes: document.getElementById('eventNotes').value,
+                createdAt: new Date().toISOString()
+            };
+
+            if (isFirebaseConnected) {
+                await addDoc(collection(db, 'events'), evt);
+            } else {
+                evt.id = 'local-' + Date.now();
+                events.push(evt);
+                saveToLocalStorage();
+                renderAllEvents();
+                renderDashboard();
+            }
+            e.target.reset();
+        });
+
+        // Delete functions
+        window.deleteStock = async (id) => {
+            if (!confirm('Er du sikker på du vil fjerne denne aktie? 🦝')) return;
+            if (isFirebaseConnected) {
+                await deleteDoc(doc(db, 'stocks', id));
+                events.filter(e => e.stockId === id).forEach(async e => {
+                    await deleteDoc(doc(db, 'events', e.id));
+                });
+            } else {
+                stocks = stocks.filter(s => s.id !== id);
+                events = events.filter(e => e.stockId !== id);
+                saveToLocalStorage();
+                renderStocks();
+                renderDashboard();
+            }
         };
-        
-        return `
-            <div class="event-item ${event.type}">
-                <div class="event-emoji">${typeEmoji[event.type]}</div>
-                <div class="event-date">${dateText}</div>
-                <div class="event-details">
-                    <div class="event-title">${event.title}</div>
-                    <div class="event-subtitle">
-                        ${stock ? `${stock.emoji} ${stock.name}` : 'Makro-event'}
-                        ${event.notes ? ` • ${event.notes}` : ''}
-                    </div>
-                </div>
-            </div>
-        `;
-    }
-    function renderAllEvents() {
-        const container = document.getElementById('allEventsList');
-        const sortedEvents = [...events].sort((a, b) => new Date(a.date) - new Date(b.date));
-        
-        if (sortedEvents.length === 0) {
-            container.innerHTML = '<p style="color: var(--nord-frost); text-align: center; padding: 2rem;">Ingen events endnu ⚡</p>';
-            return;
+
+        window.deleteEvent = async (id) => {
+            if (!confirm('Vil du slette denne begivenhed?')) return;
+            if (isFirebaseConnected) {
+                await deleteDoc(doc(db, 'events', id));
+            } else {
+                events = events.filter(e => e.id !== id);
+                saveToLocalStorage();
+                renderAllEvents();
+                renderDashboard();
+            }
+        };
+
+        // ✅ FIX 1: switchTab modtager nu 'evt' som parameter i stedet for at bruge den globale 'event'
+        window.switchTab = (tabName, evt) => {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            evt.currentTarget.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+
+            if (tabName === 'calendar') renderCalendar();
+            else if (tabName === 'dashboard') renderDashboard();
+            else if (tabName === 'stocks') renderStocks();
+            else if (tabName === 'events') {
+                renderAllEvents();
+                updateEventStockDropdown();
+            }
+        };
+
+        // Utility functions
+        function formatDate(dateStr) {
+            if (!dateStr) return 'Ikke planlagt';
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('da-DK', { year: 'numeric', month: 'long', day: 'numeric' });
         }
-        
-        container.innerHTML = sortedEvents.map(event => {
+
+        function formatDateShort(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('da-DK', { month: 'short', day: 'numeric' });
+        }
+
+        function getDaysUntil(dateStr) {
+            const date = new Date(dateStr);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            date.setHours(0, 0, 0, 0);
+            return Math.ceil((date - today) / (1000 * 60 * 60 * 24));
+        }
+
+        // Render functions
+        function renderStocks() {
+            const container = document.getElementById('stocksList');
+            if (stocks.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-emoji">🦝</div>
+                        <h3>Din zoo er tom!</h3>
+                        <p>Tid til at tilføje nogle aktier 📈</p>
+                    </div>`;
+                return;
+            }
+            container.innerHTML = stocks.map((stock, index) => `
+                <div class="stock-card" style="animation-delay: ${index * 0.1}s">
+                    <div class="stock-header">
+                        <div class="stock-title">
+                            <div class="stock-emoji">${stock.emoji}</div>
+                            <div class="stock-info">
+                                <h3>${stock.name}</h3>
+                                <div class="stock-ticker">${stock.ticker}</div>
+                            </div>
+                        </div>
+                        <button class="delete-btn" onclick="deleteStock('${stock.id}')" title="Fjern">✕</button>
+                    </div>
+                    <div class="stock-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Kurs</div>
+                            <div class="detail-value">${stock.price > 0 ? stock.price.toFixed(2) + ' DKK' : 'Ikke sat'}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Ændring</div>
+                            <div class="detail-value ${stock.change >= 0 ? 'trend-up' : 'trend-down'}">
+                                ${stock.change >= 0 ? '▲' : '▼'} ${Math.abs(stock.change).toFixed(2)}%
+                            </div>
+                        </div>
+                    </div>
+                    ${stock.notes ? `<div class="notes"><strong>📝 Noter:</strong><br>${stock.notes}</div>` : ''}
+                </div>
+            `).join('');
+        }
+
+        function renderDashboard() {
+            const today = new Date();
+            const sevenDaysFromNow = new Date(today);
+            sevenDaysFromNow.setDate(today.getDate() + 7);
+
+            const upcomingEvents = events
+                .filter(e => {
+                    const eventDate = new Date(e.date);
+                    return eventDate >= today && eventDate <= sevenDaysFromNow;
+                })
+                .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            const allFutureEvents = events
+                .filter(e => new Date(e.date) >= today)
+                .sort((a, b) => new Date(a.date) - new Date(b.date))
+                .slice(0, 10);
+
+            const upcomingContainer = document.getElementById('upcomingEvents');
+            upcomingContainer.innerHTML = upcomingEvents.length === 0
+                ? '<p style="color: var(--nord-frost); text-align: center; padding: 2rem;">Ingen events i de næste 7 dage 🌴</p>'
+                : upcomingEvents.map(e => renderEventItem(e)).join('');
+
+            document.getElementById('allUpcomingEvents').innerHTML = allFutureEvents.map(e => renderEventItem(e)).join('');
+
+            document.getElementById('statsStocks').textContent = stocks.length;
+            document.getElementById('statsEvents').textContent = events.length;
+
+            const thisMonthEvents = events.filter(e => {
+                const d = new Date(e.date);
+                return d.getMonth() === today.getMonth() && d.getFullYear() === today.getFullYear();
+            });
+            document.getElementById('statsThisMonth').textContent = thisMonthEvents.length;
+        }
+
+        function renderEventItem(event) {
             const stock = stocks.find(s => s.id === event.stockId);
+            const daysUntil = getDaysUntil(event.date);
+            let dateText = formatDateShort(event.date);
+            if (daysUntil === 0) dateText = 'I DAG!';
+            else if (daysUntil === 1) dateText = 'I MORGEN';
+            else if (daysUntil > 0 && daysUntil <= 7) dateText = `Om ${daysUntil} dage`;
+
             const typeEmoji = { 'macro': '📊', 'report': '📄', 'earnings': '💰' };
-            
             return `
                 <div class="event-item ${event.type}">
                     <div class="event-emoji">${typeEmoji[event.type]}</div>
-                    <div class="event-date">${formatDateShort(event.date)}</div>
+                    <div class="event-date">${dateText}</div>
                     <div class="event-details">
                         <div class="event-title">${event.title}</div>
                         <div class="event-subtitle">
@@ -1112,101 +1056,128 @@
                             ${event.notes ? ` • ${event.notes}` : ''}
                         </div>
                     </div>
-                    <button class="delete-btn" onclick="deleteEvent('${event.id}')" title="Slet">✕</button>
-                </div>
-            `;
-        }).join('');
-    }
-    function updateEventStockDropdown() {
-        const select = document.getElementById('eventStock');
-        select.innerHTML = '<option value="">Ingen / Makro-event</option>' +
-            stocks.map(s => `<option value="${s.id}">${s.emoji} ${s.name}</option>`).join('');
-    }
-    // Calendar
-    window.changeMonth = (direction) => {
-        if (direction === 0) {
-            currentMonth = new Date();
-        } else {
-            currentMonth.setMonth(currentMonth.getMonth() + direction);
+                </div>`;
         }
-        renderCalendar();
-    };
-    function renderCalendar() {
-        const year = currentMonth.getFullYear();
-        const month = currentMonth.getMonth();
-        
-        const monthNames = ['Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni', 
-                          'Juli', 'August', 'September', 'Oktober', 'November', 'December'];
-        document.getElementById('calendarMonth').textContent = `${monthNames[month]} ${year}`;
-        
-        const firstDay = new Date(year, month, 1);
-        const lastDay = new Date(year, month + 1, 0);
-        const firstDayOfWeek = firstDay.getDay() || 7;
-        const daysInMonth = lastDay.getDate();
-        
-        const container = document.getElementById('calendarDays');
-        container.innerHTML = '';
-        
-        const prevLastDay = new Date(year, month, 0).getDate();
-        for (let i = firstDayOfWeek - 2; i >= 0; i--) {
-            const day = prevLastDay - i;
-            const div = document.createElement('div');
-            div.className = 'calendar-day other-month';
-            div.textContent = day;
-            container.appendChild(div);
-        }
-        
-        const today = new Date();
-        for (let day = 1; day <= daysInMonth; day++) {
-            const date = new Date(year, month, day);
-            const dateStr = date.toISOString().split('T')[0];
-            
-            const dayEvents = events.filter(e => e.date === dateStr);
-            const eventTypes = [...new Set(dayEvents.map(e => e.type))];
-            
-            const div = document.createElement('div');
-            div.className = 'calendar-day';
-            
-            if (date.toDateString() === today.toDateString()) {
-                div.classList.add('today');
+
+        function renderAllEvents() {
+            const container = document.getElementById('allEventsList');
+            const sortedEvents = [...events].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            if (sortedEvents.length === 0) {
+                container.innerHTML = '<p style="color: var(--nord-frost); text-align: center; padding: 2rem;">Ingen events endnu ⚡</p>';
+                return;
             }
-            
-            if (dayEvents.length > 0) {
-                if (eventTypes.length > 1) {
-                    div.classList.add('has-multiple');
-                } else if (eventTypes.includes('macro')) {
-                    div.classList.add('has-macro');
-                } else if (eventTypes.includes('report')) {
-                    div.classList.add('has-report');
-                } else if (eventTypes.includes('earnings')) {
-                    div.classList.add('has-event');
+
+            const typeEmoji = { 'macro': '📊', 'report': '📄', 'earnings': '💰' };
+            container.innerHTML = sortedEvents.map(event => {
+                const stock = stocks.find(s => s.id === event.stockId);
+                return `
+                    <div class="event-item ${event.type}">
+                        <div class="event-emoji">${typeEmoji[event.type]}</div>
+                        <div class="event-date">${formatDateShort(event.date)}</div>
+                        <div class="event-details">
+                            <div class="event-title">${event.title}</div>
+                            <div class="event-subtitle">
+                                ${stock ? `${stock.emoji} ${stock.name}` : 'Makro-event'}
+                                ${event.notes ? ` • ${event.notes}` : ''}
+                            </div>
+                        </div>
+                        <button class="delete-btn" onclick="deleteEvent('${event.id}')" title="Slet">✕</button>
+                    </div>`;
+            }).join('');
+        }
+
+        function updateEventStockDropdown() {
+            const select = document.getElementById('eventStock');
+            select.innerHTML = '<option value="">Ingen / Makro-event</option>' +
+                stocks.map(s => `<option value="${s.id}">${s.emoji} ${s.name}</option>`).join('');
+        }
+
+        // ✅ FIX 2: Kalender indsætter nu dage direkte i #calendarGrid og fjerner
+        //    kun .calendar-day elementer — headers bevares
+        window.changeMonth = (direction) => {
+            if (direction === 0) {
+                currentMonth = new Date();
+            } else {
+                currentMonth.setMonth(currentMonth.getMonth() + direction);
+            }
+            renderCalendar();
+        };
+
+        function renderCalendar() {
+            const year = currentMonth.getFullYear();
+            const month = currentMonth.getMonth();
+            const monthNames = ['Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni',
+                                'Juli', 'August', 'September', 'Oktober', 'November', 'December'];
+            document.getElementById('calendarMonth').textContent = `${monthNames[month]} ${year}`;
+
+            const grid = document.getElementById('calendarGrid');
+
+            // Fjern kun kalender-dage, bevar header-celler
+            grid.querySelectorAll('.calendar-day').forEach(d => d.remove());
+
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const firstDayOfWeek = firstDay.getDay() || 7; // mandag = 1
+            const daysInMonth = lastDay.getDate();
+
+            // Forrige måneds dage
+            const prevLastDay = new Date(year, month, 0).getDate();
+            for (let i = firstDayOfWeek - 2; i >= 0; i--) {
+                const div = document.createElement('div');
+                div.className = 'calendar-day other-month';
+                div.textContent = prevLastDay - i;
+                grid.appendChild(div);
+            }
+
+            // Denne måneds dage
+            const today = new Date();
+            for (let day = 1; day <= daysInMonth; day++) {
+                const date = new Date(year, month, day);
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const dayEvents = events.filter(e => e.date === dateStr);
+                const eventTypes = [...new Set(dayEvents.map(e => e.type))];
+
+                const div = document.createElement('div');
+                div.className = 'calendar-day';
+
+                if (date.toDateString() === today.toDateString()) {
+                    div.classList.add('today');
                 }
+
+                if (dayEvents.length > 0) {
+                    if (eventTypes.length > 1) div.classList.add('has-multiple');
+                    else if (eventTypes.includes('macro')) div.classList.add('has-macro');
+                    else if (eventTypes.includes('report')) div.classList.add('has-report');
+                    else if (eventTypes.includes('earnings')) div.classList.add('has-event');
+                }
+
+                div.textContent = day;
+                div.title = dayEvents.map(e => e.title).join('\n');
+                grid.appendChild(div);
             }
-            
-            div.textContent = day;
-            div.title = dayEvents.map(e => e.title).join('\n');
-            container.appendChild(div);
+
+            // Næste måneds dage (fyld op til 42 celler = 6 uger)
+            const totalCells = firstDayOfWeek - 1 + daysInMonth;
+            const remainingDays = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+            for (let day = 1; day <= remainingDays; day++) {
+                const div = document.createElement('div');
+                div.className = 'calendar-day other-month';
+                div.textContent = day;
+                grid.appendChild(div);
+            }
         }
-        
-        const remainingDays = 42 - (firstDayOfWeek - 1 + daysInMonth);
-        for (let day = 1; day <= remainingDays; day++) {
-            const div = document.createElement('div');
-            div.className = 'calendar-day other-month';
-            div.textContent = day;
-            container.appendChild(div);
-        }
-    }
-    // Initialize
-    window.addEventListener('DOMContentLoaded', () => {
-        if (!isFirebaseConnected) {
-            renderStocks();
-            renderDashboard();
-            renderAllEvents();
-            updateEventStockDropdown();
-        }
-        renderCalendar();
-    });
-</script>
-```
+
+        // Initialize
+        window.addEventListener('DOMContentLoaded', () => {
+            if (!isFirebaseConnected) {
+                renderStocks();
+                renderDashboard();
+                renderAllEvents();
+                updateEventStockDropdown();
+            }
+            renderCalendar();
+        });
+    </script>
 </body>
-</html>test
+</html>
