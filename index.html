@@ -9,7 +9,7 @@
 body { font-family: Arial, sans-serif; background:#fff; margin:0; padding:40px }
 h1 { text-align:center; margin-bottom:30px }
 .controls { text-align:center; margin-bottom:20px }
-select, button { padding:10px 20px; font-size:16px }
+button { padding:10px 20px; font-size:16px; cursor:pointer }
 #words {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -35,129 +35,52 @@ select, button { padding:10px 20px; font-size:16px }
 <h1>Nikolajs Ord Generator</h1>
 
 <div class="controls">
-  <select id="theme">
-    <option value="mixed">🎭 Blandet</option>
-    <option value="mammals">🦁 Pattedyr</option>
-    <option value="names">👤 Danske navne</option>
-    <option value="astronomy">🌌 Astronomi</option>
-    <option value="food">🍕 Mad</option>
-    <option value="design">🎨 Design</option>
-    <option value="romance">💕 Romantik</option>
-  </select>
-  <button onclick="generate()">Generer</button>
+  <button onclick="generate()">Generer nye ord</button>
 </div>
 
 <div id="words"></div>
 
 <script>
-/* =========================
-   DATA-BYGGESTEN
-========================= */
+let ORDSAMLING = [];
 
-const WORD_BANKS = {
-  mammals: [
-    "Leopard","Delfin","Elefant","Gepard","Panda","Gorilla","Orangutang",
-    "Ulve","Løve","Tiger","Næsehorn","Flodhest","Odder","Los","Mår"
-  ],
-  names: [
-    "Sebastian","Isabella","Frederikke","Alexander","Benjamin","Mathilde",
-    "Victoria","Josephine","Christopher","Andreas","Magnus","Caroline"
-  ],
-  astronomy: [
-    "Supernova","Galakse","Exoplanet","Sorte hul","Kvasar","Pulsar",
-    "Stjernetåge","Asteroide","Komet","Andromedagalaksen"
-  ],
-  food: [
-    "Risotto","Smørrebrød","Tiramisu","Paella","Sushi","Bouillabaisse",
-    "Crème brûlée","Tapas","Ramen","Gnocchi"
-  ],
-  design: [
-    "Minimalisme","Bauhaus","Art deco","Brutalisme","Skandinavisk design",
-    "Midcentury modern","Maximalisme","Funktionalisme"
-  ],
-  romance: [
-    "Forelskelse","Tiltrækning","Kemi","Flirt","Kærlighed","Intimitet",
-    "Nærhed","Forbindelse","Romantik"
-  ]
-};
-
-const DEFINITION_TEMPLATES = [
-  "Et begreb der beskriver {word} i en bredere sammenhæng.",
-  "{word} bruges ofte til at beskrive en særlig egenskab eller oplevelse.",
-  "En betegnelse for {word}, som har både kulturel og praktisk betydning.",
-  "Et velkendt udtryk relateret til {word}."
-];
-
-const EXAMPLE_TEMPLATES = [
-  "{word} spillede en vigtig rolle i hendes hverdag.",
-  "Han kunne ikke lade være med at tænke på {word}.",
-  "{word} blev nævnt som et centralt element i samtalen.",
-  "For mange er {word} noget helt særligt."
-];
-
-/* =========================
-   GENERÉR ~700 ORD
-========================= */
-
-function buildMockData() {
-  const result = {};
-
-  Object.entries(WORD_BANKS).forEach(([theme, words]) => {
-    result[theme] = [];
-
-    for (let i = 0; i < 80; i++) {
-      words.forEach(base => {
-        const word = i === 0 ? base : `${base} ${i+1}`;
-
-        result[theme].push({
-          word,
-          type: theme === "names" ? "Fornavn" : "Substantiv",
-          definition: pick(DEFINITION_TEMPLATES).replace("{word}", base),
-          example: pick(EXAMPLE_TEMPLATES).replace("{word}", base)
-        });
-      });
-    }
-  });
-
-  return result;
-}
-
-function pick(arr) {
-  return arr[Math.floor(Math.random() * arr.length)];
-}
-
-const MOCK_DATA = buildMockData();
-
-/* =========================
-   UI
-========================= */
-
-function getMixed() {
-  return Object.values(MOCK_DATA).flat();
+async function loadWords() {
+  try {
+    const response = await fetch('ordsamling.json');
+    ORDSAMLING = await response.json();
+    generate();
+  } catch (error) {
+    console.error('Kunne ikke indlæse ord:', error);
+    document.getElementById('words').innerHTML = 
+      '<p style="text-align:center;color:red;">Fejl: Kunne ikke indlæse ordsamling.json</p>';
+  }
 }
 
 function generate() {
-  const theme = document.getElementById("theme").value;
   const container = document.getElementById("words");
   container.innerHTML = "";
 
-  const pool = theme === "mixed" ? getMixed() : MOCK_DATA[theme];
-  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0,5);
+  if (ORDSAMLING.length === 0) {
+    container.innerHTML = '<p style="text-align:center;">Indlæser ord...</p>';
+    return;
+  }
+
+  const shuffled = [...ORDSAMLING]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 5);
 
   shuffled.forEach(w => {
     const div = document.createElement("div");
     div.className = "word";
     div.innerHTML = `
-      <h2>${w.word}</h2>
-      <div class="type">${w.type}</div>
-      <p>${w.definition}</p>
-      <em>${w.example}</em>
+      <h2>${w.ord}</h2>
+      <div class="type">Begreb</div>
+      <p>${w.forklaring}</p>
     `;
     container.appendChild(div);
   });
 }
 
-window.onload = generate;
+window.onload = loadWords;
 </script>
 
 </body>
