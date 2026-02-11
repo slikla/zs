@@ -1,22 +1,4562 @@
 [
-  {"ord": "abstrakt", "forklaring": "Noget der ikke er konkret eller håndgribeligt"},
-  {"ord": "konkret", "forklaring": "Noget der kan ses og berøres"},
-  {"ord": "analysere", "forklaring": "At undersøge noget i detaljer for at forstå det"},
-  {"ord": "syntese", "forklaring": "At samle dele for at skabe en helhed"},
-  {"ord": "kritisk", "forklaring": "At vurdere noget med omhu og refleksion"},
-  {"ord": "hypotese", "forklaring": "En foreløbig forklaring der kan testes"},
-  {"ord": "variabel", "forklaring": "Noget der kan ændre sig i et eksperiment"},
-  {"ord": "konklusion", "forklaring": "Resultatet af en undersøgelse eller analyse"},
-  {"ord": "teori", "forklaring": "En systematisk forklaring på fænomener"},
-  {"ord": "metode", "forklaring": "En plan eller fremgangsmåde til at løse et problem"},
-  {"ord": "data", "forklaring": "Fakta eller oplysninger, der kan analyseres"},
-  {"ord": "forskning", "forklaring": "Systematisk indsamling af viden"},
-  {"ord": "observation", "forklaring": "At se og notere fænomener nøje"},
-  {"ord": "eksperiment", "forklaring": "En test for at undersøge en hypotese"},
-  {"ord": "statistik", "forklaring": "Tal og analyser der viser mønstre"},
-  {"ord": "logik", "forklaring": "Ræsonnement baseret på regler og sammenhænge"},
-  {"ord": "definition", "forklaring": "En forklaring af betydningen af et ord"},
-  {"ord": "argument", "forklaring": "En grund til at støtte en påstand"},
-  {"ord": "perspektiv", "forklaring": "En måde at se eller forstå noget på"},
-  {"ord": "begreb", "forklaring": "En idé eller tanke om noget"}
+  {
+    "ord": "Leopard",
+    "forklaring": "En stor plettet kat fra Afrika og Asien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Delfin",
+    "forklaring": "Et intelligent havpattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Elefant",
+    "forklaring": "Det største landdyr med lang snabel",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Gepard",
+    "forklaring": "Verdens hurtigste landdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Panda",
+    "forklaring": "Sort-hvid bjørn fra Kina",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Gorilla",
+    "forklaring": "En stor abe fra Afrika",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Orangutang",
+    "forklaring": "En rødlig abe fra Sydøstasien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Ulv",
+    "forklaring": "Et rovdyr i hundefamilien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Løve",
+    "forklaring": "Stor afrikansk kat kendt som junglens konge",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Tiger",
+    "forklaring": "Stor stribet kat fra Asien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Næsehorn",
+    "forklaring": "Stort dyr med horn på næsen",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Flodhest",
+    "forklaring": "Stort vandlevende pattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Odder",
+    "forklaring": "Et vandlevende rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Los",
+    "forklaring": "En mellemstor vildkat",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Mår",
+    "forklaring": "Et lille rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Giraf",
+    "forklaring": "Verdens højeste dyr med lang hals",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Zebra",
+    "forklaring": "Sort-hvidt stribet dyr fra Afrika",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Bjørn",
+    "forklaring": "Stort kraftigt rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Isbjørn",
+    "forklaring": "Hvid bjørn fra Arktis",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Koala",
+    "forklaring": "Australsk pungdyr der lever i træer",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Kænguru",
+    "forklaring": "Hoppende pungdyr fra Australien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Pindsvin",
+    "forklaring": "Lille pattedyr med pigge",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Egern",
+    "forklaring": "Lille klatrende gnaverdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Hare",
+    "forklaring": "Langøret hopper",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Kronhjort",
+    "forklaring": "Stort dyr med gevir",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Rådyr",
+    "forklaring": "Mindre hjortedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Vildsvin",
+    "forklaring": "Vild variant af grisen",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Grævling",
+    "forklaring": "Sort-hvidt rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Ræv",
+    "forklaring": "Rødt rovdyr i hundefamilien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Hval",
+    "forklaring": "Stort havpattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Spækhugger",
+    "forklaring": "Sort-hvid hval der jager i flok",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Sæl",
+    "forklaring": "Havpattedyr med luffer",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Hvalros",
+    "forklaring": "Stort havpattedyr med stødtænder",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Antilope",
+    "forklaring": "Hurtigt løbende dyr fra Afrika",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Bæver",
+    "forklaring": "Gnaverdyr der bygger dæmninger",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Murmeldyr",
+    "forklaring": "Stort gnaverdyr fra bjergene",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Lemming",
+    "forklaring": "Lille gnaverdyr fra tundraen",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Flagermus",
+    "forklaring": "Flyvende pattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Kamel",
+    "forklaring": "Ørkendyr med pukkel",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Lama",
+    "forklaring": "Sydamerikansk lastdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Bison",
+    "forklaring": "Stort okselignende dyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Moskusokse",
+    "forklaring": "Håret dyr fra Arktis",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Schimpanse",
+    "forklaring": "Intelligent abe tæt på mennesket",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Gibbon",
+    "forklaring": "Lille hurtigt klatrende abe",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Mandrill",
+    "forklaring": "Farverig abe med blåt ansigt",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Lemur",
+    "forklaring": "Primater fra Madagaskar",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Pungrotte",
+    "forklaring": "Amerikansk pungdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Vaskebjørn",
+    "forklaring": "Maskeret rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Stinkdyr",
+    "forklaring": "Sort-hvidt dyr med kraftig lugt",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Skældyr",
+    "forklaring": "Skælklædt pattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Tapir",
+    "forklaring": "Dyr med kort snabel",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Dovendyr",
+    "forklaring": "Langsomt klatrende dyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Myresluger",
+    "forklaring": "Dyr med lang snude til myrer",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Bæltedyr",
+    "forklaring": "Pansret sydamerikansk dyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Næbdyr",
+    "forklaring": "Æggelæggende pattedyr fra Australien",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Hyæne",
+    "forklaring": "Afrikansk rovdyr med kraftigt bid",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Jaguar",
+    "forklaring": "Stor kat fra Sydamerika",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Puma",
+    "forklaring": "Stor nordamerikansk kat",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Ozelot",
+    "forklaring": "Mindre plettet kat",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Mink",
+    "forklaring": "Lille rovdyr med værdifuld pels",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Hermelin",
+    "forklaring": "Lille rovdyr med hvid vinterpels",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Ilder",
+    "forklaring": "Langstrakt rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Mangust",
+    "forklaring": "Lille rovdyr der jager slanger",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Præriehund",
+    "forklaring": "Socialt gnaverdyr fra Amerika",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Gopher",
+    "forklaring": "Gravende gnaverdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Chinchilla",
+    "forklaring": "Gnaverdyr med blød pels",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Marsvin",
+    "forklaring": "Populært kæledyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Hamster",
+    "forklaring": "Lille gnaverdyr med kæbeposer",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Muldvarp",
+    "forklaring": "Underjordisk levende dyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Spidsmus",
+    "forklaring": "Lille insektædende pattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Rotte",
+    "forklaring": "Stort gnaverdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Mus",
+    "forklaring": "Lille gnaverdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Husmus",
+    "forklaring": "Almindelig mus i huse",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Markmus",
+    "forklaring": "Mus der lever på marker",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Springmus",
+    "forklaring": "Hoppende ørkenmus",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Okapi",
+    "forklaring": "Zebra-lignende giraf",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Narhval",
+    "forklaring": "Hval med spiralformet stødtand",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Beluga",
+    "forklaring": "Hvid arktisk hval",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Grønlandshval",
+    "forklaring": "Stor hval fra nordlige farvande",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Knølhval",
+    "forklaring": "Hval med lange finner",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Blåhval",
+    "forklaring": "Verdens største dyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Kaskelot",
+    "forklaring": "Stor tandhval",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Søkø",
+    "forklaring": "Stort planteædende havpattedyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Grindehval",
+    "forklaring": "Mellemstor tandhval",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Havmarsvin",
+    "forklaring": "Lille hval uden næb",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Bavian",
+    "forklaring": "Intelligent markabe",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Meerkat",
+    "forklaring": "Socialt lille rovdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Vombat",
+    "forklaring": "Gravende australsk pungdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Tasmansk djævel",
+    "forklaring": "Aggressivt pungdyr",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Gepard",
+    "forklaring": "Hurtigløbende plettet kat",
+    "kategori": "mammals"
+  },
+  {
+    "ord": "Sebastian",
+    "forklaring": "Latinsk navn der betyder ærværdig",
+    "kategori": "names"
+  },
+  {
+    "ord": "Isabella",
+    "forklaring": "Spansk variant af Elisabeth",
+    "kategori": "names"
+  },
+  {
+    "ord": "Frederikke",
+    "forklaring": "Kvindelig form af Frederik",
+    "kategori": "names"
+  },
+  {
+    "ord": "Alexander",
+    "forklaring": "Græsk navn der betyder forsvarer",
+    "kategori": "names"
+  },
+  {
+    "ord": "Benjamin",
+    "forklaring": "Hebraisk navn der betyder lykkebarn",
+    "kategori": "names"
+  },
+  {
+    "ord": "Mathilde",
+    "forklaring": "Germansk navn der betyder stærk i kamp",
+    "kategori": "names"
+  },
+  {
+    "ord": "Victoria",
+    "forklaring": "Latinsk navn der betyder sejr",
+    "kategori": "names"
+  },
+  {
+    "ord": "Josephine",
+    "forklaring": "Kvindelig form af Josef",
+    "kategori": "names"
+  },
+  {
+    "ord": "Christopher",
+    "forklaring": "Græsk navn der betyder Kristusbærer",
+    "kategori": "names"
+  },
+  {
+    "ord": "Andreas",
+    "forklaring": "Græsk navn der betyder mandige",
+    "kategori": "names"
+  },
+  {
+    "ord": "Magnus",
+    "forklaring": "Latinsk navn der betyder stor",
+    "kategori": "names"
+  },
+  {
+    "ord": "Caroline",
+    "forklaring": "Kvindelig form af Karl",
+    "kategori": "names"
+  },
+  {
+    "ord": "Anastasia",
+    "forklaring": "Græsk navn der betyder genopstandelse",
+    "kategori": "names"
+  },
+  {
+    "ord": "Theodor",
+    "forklaring": "Græsk navn der betyder Guds gave",
+    "kategori": "names"
+  },
+  {
+    "ord": "Kristian",
+    "forklaring": "Nordisk form af Christian",
+    "kategori": "names"
+  },
+  {
+    "ord": "Nikolaj",
+    "forklaring": "Græsk navn der betyder folkets sejr",
+    "kategori": "names"
+  },
+  {
+    "ord": "Gabriella",
+    "forklaring": "Kvindelig form af Gabriel",
+    "kategori": "names"
+  },
+  {
+    "ord": "Jonathan",
+    "forklaring": "Hebraisk navn der betyder Guds gave",
+    "kategori": "names"
+  },
+  {
+    "ord": "Elisabeth",
+    "forklaring": "Hebraisk navn der betyder Gud er fuldkommenhed",
+    "kategori": "names"
+  },
+  {
+    "ord": "Maximilian",
+    "forklaring": "Latinsk navn der betyder den største",
+    "kategori": "names"
+  },
+  {
+    "ord": "Kathrine",
+    "forklaring": "Græsk navn der betyder ren",
+    "kategori": "names"
+  },
+  {
+    "ord": "Phillip",
+    "forklaring": "Græsk navn der betyder hesteelsker",
+    "kategori": "names"
+  },
+  {
+    "ord": "Emilie",
+    "forklaring": "Latinsk navn af ukendt betydning",
+    "kategori": "names"
+  },
+  {
+    "ord": "Nikolai",
+    "forklaring": "Russisk variant af Nikolaj",
+    "kategori": "names"
+  },
+  {
+    "ord": "Cornelia",
+    "forklaring": "Latinsk navn af ukendt betydning",
+    "kategori": "names"
+  },
+  {
+    "ord": "Frederik",
+    "forklaring": "Germansk navn der betyder fredelig hersker",
+    "kategori": "names"
+  },
+  {
+    "ord": "Johanne",
+    "forklaring": "Kvindelig form af Johannes",
+    "kategori": "names"
+  },
+  {
+    "ord": "Rasmus",
+    "forklaring": "Kortform af Erasmus",
+    "kategori": "names"
+  },
+  {
+    "ord": "Olivia",
+    "forklaring": "Latinsk navn der betyder oliven",
+    "kategori": "names"
+  },
+  {
+    "ord": "Valdemar",
+    "forklaring": "Nordisk navn der betyder berømt hersker",
+    "kategori": "names"
+  },
+  {
+    "ord": "Astrid",
+    "forklaring": "Nordisk navn der betyder guddommelig skønhed",
+    "kategori": "names"
+  },
+  {
+    "ord": "Sigurd",
+    "forklaring": "Nordisk navn der betyder sejrsbeskytter",
+    "kategori": "names"
+  },
+  {
+    "ord": "Ingrid",
+    "forklaring": "Nordisk navn der betyder beskyttet af Ing",
+    "kategori": "names"
+  },
+  {
+    "ord": "Christian",
+    "forklaring": "Latinsk navn der betyder kristen",
+    "kategori": "names"
+  },
+  {
+    "ord": "Annelise",
+    "forklaring": "Sammensætning af Anne og Lise",
+    "kategori": "names"
+  },
+  {
+    "ord": "Casper",
+    "forklaring": "Persisk navn der betyder skatmester",
+    "kategori": "names"
+  },
+  {
+    "ord": "Beatrice",
+    "forklaring": "Latinsk navn der betyder lykkebringer",
+    "kategori": "names"
+  },
+  {
+    "ord": "Tobias",
+    "forklaring": "Hebraisk navn der betyder Herren er god",
+    "kategori": "names"
+  },
+  {
+    "ord": "Camilla",
+    "forklaring": "Latinsk navn af ukendt betydning",
+    "kategori": "names"
+  },
+  {
+    "ord": "William",
+    "forklaring": "Germansk navn der betyder viljesstærk beskytter",
+    "kategori": "names"
+  },
+  {
+    "ord": "Cecilie",
+    "forklaring": "Latinsk navn der betyder blind",
+    "kategori": "names"
+  },
+  {
+    "ord": "Michael",
+    "forklaring": "Hebraisk navn der betyder hvem er som Gud",
+    "kategori": "names"
+  },
+  {
+    "ord": "Juliane",
+    "forklaring": "Kvindelig form af Julian",
+    "kategori": "names"
+  },
+  {
+    "ord": "Henrik",
+    "forklaring": "Nordisk form af Henry",
+    "kategori": "names"
+  },
+  {
+    "ord": "Karoline",
+    "forklaring": "Variant af Caroline",
+    "kategori": "names"
+  },
+  {
+    "ord": "Thomas",
+    "forklaring": "Aramæisk navn der betyder tvilling",
+    "kategori": "names"
+  },
+  {
+    "ord": "Amalie",
+    "forklaring": "Germansk navn der betyder arbejdsom",
+    "kategori": "names"
+  },
+  {
+    "ord": "Mikkel",
+    "forklaring": "Dansk kortform af Michael",
+    "kategori": "names"
+  },
+  {
+    "ord": "Sofie",
+    "forklaring": "Græsk navn der betyder visdom",
+    "kategori": "names"
+  },
+  {
+    "ord": "Morten",
+    "forklaring": "Nordisk form af Martin",
+    "kategori": "names"
+  },
+  {
+    "ord": "Marie",
+    "forklaring": "Variant af Maria",
+    "kategori": "names"
+  },
+  {
+    "ord": "Anders",
+    "forklaring": "Nordisk form af Andreas",
+    "kategori": "names"
+  },
+  {
+    "ord": "Louise",
+    "forklaring": "Kvindelig form af Louis",
+    "kategori": "names"
+  },
+  {
+    "ord": "Jesper",
+    "forklaring": "Dansk form af Kaspar",
+    "kategori": "names"
+  },
+  {
+    "ord": "Johanna",
+    "forklaring": "Variant af Johanne",
+    "kategori": "names"
+  },
+  {
+    "ord": "Oliver",
+    "forklaring": "Latinsk navn der betyder oliventræ",
+    "kategori": "names"
+  },
+  {
+    "ord": "Andrea",
+    "forklaring": "Kvindelig form af Andreas",
+    "kategori": "names"
+  },
+  {
+    "ord": "Gustav",
+    "forklaring": "Nordisk navn der betyder Goters stav",
+    "kategori": "names"
+  },
+  {
+    "ord": "Helena",
+    "forklaring": "Græsk navn der betyder fakkel",
+    "kategori": "names"
+  },
+  {
+    "ord": "Marcus",
+    "forklaring": "Latinsk navn afledt af Mars",
+    "kategori": "names"
+  },
+  {
+    "ord": "Regitze",
+    "forklaring": "Dansk navn af ukendt oprindelse",
+    "kategori": "names"
+  },
+  {
+    "ord": "Jakob",
+    "forklaring": "Hebraisk navn der betyder hælholder",
+    "kategori": "names"
+  },
+  {
+    "ord": "Katrine",
+    "forklaring": "Nordisk form af Kathrine",
+    "kategori": "names"
+  },
+  {
+    "ord": "August",
+    "forklaring": "Latinsk navn der betyder ærværdig",
+    "kategori": "names"
+  },
+  {
+    "ord": "Klara",
+    "forklaring": "Latinsk navn der betyder klar",
+    "kategori": "names"
+  },
+  {
+    "ord": "Victor",
+    "forklaring": "Latinsk navn der betyder sejrherre",
+    "kategori": "names"
+  },
+  {
+    "ord": "Josefine",
+    "forklaring": "Variant af Josephine",
+    "kategori": "names"
+  },
+  {
+    "ord": "Bertram",
+    "forklaring": "Germansk navn der betyder lys ravn",
+    "kategori": "names"
+  },
+  {
+    "ord": "Margrethe",
+    "forklaring": "Græsk navn der betyder perle",
+    "kategori": "names"
+  },
+  {
+    "ord": "Villads",
+    "forklaring": "Dansk navn afledt af Vilhelm",
+    "kategori": "names"
+  },
+  {
+    "ord": "Filippa",
+    "forklaring": "Kvindelig form af Filip",
+    "kategori": "names"
+  },
+  {
+    "ord": "Kristoffer",
+    "forklaring": "Nordisk form af Christopher",
+    "kategori": "names"
+  },
+  {
+    "ord": "Leonora",
+    "forklaring": "Variant af Eleanor",
+    "kategori": "names"
+  },
+  {
+    "ord": "Malthe",
+    "forklaring": "Nordisk navn af ukendt betydning",
+    "kategori": "names"
+  },
+  {
+    "ord": "Albertine",
+    "forklaring": "Kvindelig form af Albert",
+    "kategori": "names"
+  },
+  {
+    "ord": "Mathias",
+    "forklaring": "Variant af Matthias",
+    "kategori": "names"
+  },
+  {
+    "ord": "Nathalie",
+    "forklaring": "Fransk form af Natalie",
+    "kategori": "names"
+  },
+  {
+    "ord": "Oskar",
+    "forklaring": "Nordisk navn der betyder Guds spyd",
+    "kategori": "names"
+  },
+  {
+    "ord": "Viktoria",
+    "forklaring": "Variant af Victoria",
+    "kategori": "names"
+  },
+  {
+    "ord": "Ludvig",
+    "forklaring": "Germansk navn der betyder berømt kriger",
+    "kategori": "names"
+  },
+  {
+    "ord": "Therese",
+    "forklaring": "Græsk navn af ukendt betydning",
+    "kategori": "names"
+  },
+  {
+    "ord": "Daniel",
+    "forklaring": "Hebraisk navn der betyder Gud er min dommer",
+    "kategori": "names"
+  },
+  {
+    "ord": "Nicoline",
+    "forklaring": "Kvindelig form af Nikolaj",
+    "kategori": "names"
+  },
+  {
+    "ord": "Elias",
+    "forklaring": "Hebraisk navn der betyder min Gud er Jahve",
+    "kategori": "names"
+  },
+  {
+    "ord": "Charlotte",
+    "forklaring": "Kvindelig form af Charles",
+    "kategori": "names"
+  },
+  {
+    "ord": "Gabriel",
+    "forklaring": "Hebraisk navn der betyder Guds styrke",
+    "kategori": "names"
+  },
+  {
+    "ord": "Rebecca",
+    "forklaring": "Hebraisk navn der betyder at binde",
+    "kategori": "names"
+  },
+  {
+    "ord": "Laurits",
+    "forklaring": "Dansk form af Laurentius",
+    "kategori": "names"
+  },
+  {
+    "ord": "Susanne",
+    "forklaring": "Hebraisk navn der betyder lilje",
+    "kategori": "names"
+  },
+  {
+    "ord": "Vilhelm",
+    "forklaring": "Germansk navn der betyder beskytter",
+    "kategori": "names"
+  },
+  {
+    "ord": "Supernova",
+    "forklaring": "En eksploderende stjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Galakse",
+    "forklaring": "Et system af milliarder af stjerner",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Exoplanet",
+    "forklaring": "En planet uden for vores solsystem",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Sort hul",
+    "forklaring": "Et område i rummet med ekstrem tyngdekraft",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kvasar",
+    "forklaring": "Et ekstremt lyst astronomisk objekt",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Pulsar",
+    "forklaring": "En roterende neutronstjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Stjernetåge",
+    "forklaring": "En sky af gas og støv i rummet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Asteroide",
+    "forklaring": "En lille klippeagtig genstand i rummet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Komet",
+    "forklaring": "En isklump der kredser om solen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Andromedagalaksen",
+    "forklaring": "Mælkevejens nærmeste store nabo-galakse",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Neutronstjerne",
+    "forklaring": "Ekstremt tæt rest af en eksploderet stjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Hvid dværg",
+    "forklaring": "En lille, tæt rest af en døende stjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Rød kæmpe",
+    "forklaring": "En stor, kølig stjerne i sine sidste faser",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Blå kæmpe",
+    "forklaring": "En massiv, varm og lys stjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Mælkevejen",
+    "forklaring": "Vores hjemgalakse",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Solsystem",
+    "forklaring": "Solen og alt der kredser om den",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kuiperbæltet",
+    "forklaring": "En region af isklumper uden for Neptun",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Oortskyen",
+    "forklaring": "En fjern sky af kometer",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Måneformørkelse",
+    "forklaring": "Når Jorden skygger for månen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Solformørkelse",
+    "forklaring": "Når månen skygger for solen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Meteorregn",
+    "forklaring": "Mange stjerneskud på samme tid",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Aurora",
+    "forklaring": "Nordlys eller sydlys",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Ækvator",
+    "forklaring": "Jordens midterlinje",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Ekliptika",
+    "forklaring": "Solens tilsyneladende bane på himlen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Lysstyrke",
+    "forklaring": "Hvor lys en stjerne er",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Magnitude",
+    "forklaring": "Målestok for stjernernes lysstyrke",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Spektrum",
+    "forklaring": "Lyset opdelt i sine farver",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Rødforskydning",
+    "forklaring": "Lys forskudt mod rødt pga. bevægelse væk",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Blåforskydning",
+    "forklaring": "Lys forskudt mod blåt pga. bevægelse mod os",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Parallakse",
+    "forklaring": "Metode til at måle afstand til stjerner",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Lysår",
+    "forklaring": "Afstanden lyset rejser på et år",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Parsec",
+    "forklaring": "En astronomisk afstandsenhed",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Astronomisk enhed",
+    "forklaring": "Afstanden fra Jorden til Solen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Stjernetegn",
+    "forklaring": "Mønstre af stjerner på himlen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Orion",
+    "forklaring": "Et kendt stjernetegn",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Store bjørn",
+    "forklaring": "Stjernetegn med den store vogne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Polstjernen",
+    "forklaring": "Stjernen der viser mod nord",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Sirius",
+    "forklaring": "Nattehimlens klareste stjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Betelgeuse",
+    "forklaring": "En rød superkæmpe i Orion",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Rigel",
+    "forklaring": "En blå superkæmpe i Orion",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Plejaderne",
+    "forklaring": "En åben stjernehob",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kredsløb",
+    "forklaring": "En bane om et himmellegeme",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Rotation",
+    "forklaring": "Hvordan et himmellegeme drejer om sin akse",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Revolution",
+    "forklaring": "En hel omgang i kredsløb",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Tyngdekraft",
+    "forklaring": "Den kraft der holder alt i universet sammen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Mørk materie",
+    "forklaring": "Usynlig materie der påvirker tyngdekraften",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Mørk energi",
+    "forklaring": "Mystisk kraft der får universet til at ekspandere",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Big Bang",
+    "forklaring": "Universets fødsel for 13,8 milliarder år siden",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kosmisk baggrundsstråling",
+    "forklaring": "Efterglød fra Big Bang",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Hubble konstanten",
+    "forklaring": "Universets ekspansionshastighed",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Inflation",
+    "forklaring": "Universets hurtige tidlige ekspansion",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Habitabel zone",
+    "forklaring": "Område hvor flydende vand kan eksistere",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Transit",
+    "forklaring": "Når en planet passerer foran sin stjerne",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Okultation",
+    "forklaring": "Når et objekt dækker for et andet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Konjunktion",
+    "forklaring": "Når to himmellegemer står tæt sammen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Opposition",
+    "forklaring": "Når en planet står modsat solen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Elongation",
+    "forklaring": "Afstanden mellem to objekter på himlen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Jævndøgn",
+    "forklaring": "Når dag og nat er lige lange",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Solhverv",
+    "forklaring": "Årets længste eller korteste dag",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Atmosfære",
+    "forklaring": "Gaslaget omkring en planet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Magnetosfære",
+    "forklaring": "Magnetfelt omkring en planet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Ionosfære",
+    "forklaring": "Elektrisk ladet lag i atmosfæren",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Termosfære",
+    "forklaring": "Meget varmt lag højt i atmosfæren",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Stratosfære",
+    "forklaring": "Lag i atmosfæren med ozon",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Troposfære",
+    "forklaring": "Nederste lag af atmosfæren",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Exosfære",
+    "forklaring": "Yderste lag af atmosfæren",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Korona",
+    "forklaring": "Solens ydre atmosfære",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Solfakkel",
+    "forklaring": "Lys udbrud på solen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Solplet",
+    "forklaring": "Mørke pletter på solens overflade",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Solvind",
+    "forklaring": "Strøm af partikler fra solen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kratere",
+    "forklaring": "Nedslag huller på planeter og måner",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Maria",
+    "forklaring": "Mørke områder på månens overflade",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Terræn",
+    "forklaring": "Lyse bjergrige områder på månen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Regnbue",
+    "forklaring": "Farvet bue af sollys gennem regndråber",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Halo",
+    "forklaring": "Lysring omkring solen eller månen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Zenit",
+    "forklaring": "Punktet lige over ens hoved",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Horisont",
+    "forklaring": "Linjen hvor himmel møder jord",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Azimut",
+    "forklaring": "Retning målt fra nord",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Højde",
+    "forklaring": "Vinkel over horisonten",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Deklination",
+    "forklaring": "Koordinat på himlen",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Rektascension",
+    "forklaring": "Koordinat på himlen målt østpå",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Stjernehimmel",
+    "forklaring": "Himlen om natten fyldt med stjerner",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Mælkevejsbåndet",
+    "forklaring": "Det lyse bånd af vores galakse",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Zodiakallys",
+    "forklaring": "Svagt lys fra støv i solsystemet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Astrofotografi",
+    "forklaring": "Fotografering af himmelobjekter",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Teleskop",
+    "forklaring": "Instrument til at se fjerne objekter",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kikkert",
+    "forklaring": "Lille håndholdt teleskop",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Observatorium",
+    "forklaring": "Bygning med teleskoper",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Radioteleskop",
+    "forklaring": "Teleskop der opfanger radiobølger",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Spektroskopi",
+    "forklaring": "Studiet af lys opdelt i farver",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Fotometri",
+    "forklaring": "Måling af lysstyrke",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Astrometri",
+    "forklaring": "Måling af stjernernes position",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Kosmologi",
+    "forklaring": "Studiet af universets oprindelse og struktur",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Planetologi",
+    "forklaring": "Studiet af planeter",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Merkur",
+    "forklaring": "Mindste planet i solsystemet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Venus",
+    "forklaring": "Jordens søsterplanet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Mars",
+    "forklaring": "Den røde planet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Jupiter",
+    "forklaring": "Solsystemets største planet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Saturn",
+    "forklaring": "Planet med ringe",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Uranus",
+    "forklaring": "Isplanet der ligger på siden",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Neptun",
+    "forklaring": "Yderste gasplanet",
+    "kategori": "astronomy"
+  },
+  {
+    "ord": "Risotto",
+    "forklaring": "Italiensk risret",
+    "kategori": "food"
+  },
+  {
+    "ord": "Smørrebrød",
+    "forklaring": "Dansk rugbrødsret med pålæg",
+    "kategori": "food"
+  },
+  {
+    "ord": "Tiramisu",
+    "forklaring": "Italiensk dessert med mascarpone",
+    "kategori": "food"
+  },
+  {
+    "ord": "Paella",
+    "forklaring": "Spansk risret med skaldyr",
+    "kategori": "food"
+  },
+  {
+    "ord": "Sushi",
+    "forklaring": "Japansk ret med ris og rå fisk",
+    "kategori": "food"
+  },
+  {
+    "ord": "Bouillabaisse",
+    "forklaring": "Fransk fiskesuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Crème brûlée",
+    "forklaring": "Fransk dessert med karamelliseret sukker",
+    "kategori": "food"
+  },
+  {
+    "ord": "Tapas",
+    "forklaring": "Spanske små retter",
+    "kategori": "food"
+  },
+  {
+    "ord": "Ramen",
+    "forklaring": "Japansk nudelsuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Gnocchi",
+    "forklaring": "Italienske kartoffeldumplinger",
+    "kategori": "food"
+  },
+  {
+    "ord": "Croissant",
+    "forklaring": "Fransk butterdej",
+    "kategori": "food"
+  },
+  {
+    "ord": "Bruschetta",
+    "forklaring": "Italiensk ristet brød med topping",
+    "kategori": "food"
+  },
+  {
+    "ord": "Gazpacho",
+    "forklaring": "Spansk kold tomatsuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Couscous",
+    "forklaring": "Nordafrikansk hvedegryn",
+    "kategori": "food"
+  },
+  {
+    "ord": "Hummus",
+    "forklaring": "Mellemøstlig kikærtedip",
+    "kategori": "food"
+  },
+  {
+    "ord": "Falafel",
+    "forklaring": "Mellemøstlige friterede kikærteboller",
+    "kategori": "food"
+  },
+  {
+    "ord": "Moussaka",
+    "forklaring": "Græsk aubergineret",
+    "kategori": "food"
+  },
+  {
+    "ord": "Tzatziki",
+    "forklaring": "Græsk yoghurtdip med agurk",
+    "kategori": "food"
+  },
+  {
+    "ord": "Baklava",
+    "forklaring": "Tyrkisk sødebrød med nødder",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cannoli",
+    "forklaring": "Siciliansk dessertrullekage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Focaccia",
+    "forklaring": "Italiensk fladbrød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Carbonara",
+    "forklaring": "Italiensk pasta med bacon og æg",
+    "kategori": "food"
+  },
+  {
+    "ord": "Bolognese",
+    "forklaring": "Italiensk kødsauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Pesto",
+    "forklaring": "Italiensk basilikumsauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Mozzarella",
+    "forklaring": "Italiensk blød ost",
+    "kategori": "food"
+  },
+  {
+    "ord": "Parmesan",
+    "forklaring": "Italiensk hård ost",
+    "kategori": "food"
+  },
+  {
+    "ord": "Prosciutto",
+    "forklaring": "Italiensk lufttørret skinke",
+    "kategori": "food"
+  },
+  {
+    "ord": "Salami",
+    "forklaring": "Italiensk spegepølse",
+    "kategori": "food"
+  },
+  {
+    "ord": "Mortadella",
+    "forklaring": "Italiensk pølse med pistacienødder",
+    "kategori": "food"
+  },
+  {
+    "ord": "Pancetta",
+    "forklaring": "Italiensk bacon",
+    "kategori": "food"
+  },
+  {
+    "ord": "Antipasti",
+    "forklaring": "Italienske forretter",
+    "kategori": "food"
+  },
+  {
+    "ord": "Caprese",
+    "forklaring": "Italiensk salat med tomat og mozzarella",
+    "kategori": "food"
+  },
+  {
+    "ord": "Gelato",
+    "forklaring": "Italiensk is",
+    "kategori": "food"
+  },
+  {
+    "ord": "Espresso",
+    "forklaring": "Italiensk stærk kaffe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cappuccino",
+    "forklaring": "Italiensk kaffe med mælkeskum",
+    "kategori": "food"
+  },
+  {
+    "ord": "Macchiato",
+    "forklaring": "Italiensk kaffe med mælk",
+    "kategori": "food"
+  },
+  {
+    "ord": "Affogato",
+    "forklaring": "Italiensk is med espresso",
+    "kategori": "food"
+  },
+  {
+    "ord": "Amaretto",
+    "forklaring": "Italiensk mandellikør",
+    "kategori": "food"
+  },
+  {
+    "ord": "Limoncello",
+    "forklaring": "Italiensk citronlikør",
+    "kategori": "food"
+  },
+  {
+    "ord": "Grappa",
+    "forklaring": "Italiensk druebrændevin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Prosecco",
+    "forklaring": "Italiensk mousserende vin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Chianti",
+    "forklaring": "Italiensk rødvin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Barolo",
+    "forklaring": "Italiensk premium rødvin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Pinot grigio",
+    "forklaring": "Italiensk hvidvin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Sangiovese",
+    "forklaring": "Italiensk vindruesortering",
+    "kategori": "food"
+  },
+  {
+    "ord": "Nebbiolo",
+    "forklaring": "Italiensk vindruesortering",
+    "kategori": "food"
+  },
+  {
+    "ord": "Marsala",
+    "forklaring": "Italiensk dessertvin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Vermouth",
+    "forklaring": "Italiensk krydret vin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Biscotti",
+    "forklaring": "Italienske dobbeltbagte småkager",
+    "kategori": "food"
+  },
+  {
+    "ord": "Panettone",
+    "forklaring": "Italiensk julekage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Panforte",
+    "forklaring": "Italiensk nøddekage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Amaretti",
+    "forklaring": "Italienske mandelsmåkager",
+    "kategori": "food"
+  },
+  {
+    "ord": "Panna cotta",
+    "forklaring": "Italiensk fløddessert",
+    "kategori": "food"
+  },
+  {
+    "ord": "Zabaglione",
+    "forklaring": "Italiensk æggecreme",
+    "kategori": "food"
+  },
+  {
+    "ord": "Semifreddo",
+    "forklaring": "Italiensk frossen dessert",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cassata",
+    "forklaring": "Siciliansk iskage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Sfogliatelle",
+    "forklaring": "Napolitansk butterdejskage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Arancini",
+    "forklaring": "Sicilianske friterede risboller",
+    "kategori": "food"
+  },
+  {
+    "ord": "Supplì",
+    "forklaring": "Romerske friterede risboller",
+    "kategori": "food"
+  },
+  {
+    "ord": "Polenta",
+    "forklaring": "Italiensk majsgrød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Carpaccio",
+    "forklaring": "Italiensk råt oksekød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Vitello tonnato",
+    "forklaring": "Italiensk kalvekød med tunsauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Ossobuco",
+    "forklaring": "Italiensk braiseret kalveskank",
+    "kategori": "food"
+  },
+  {
+    "ord": "Saltimbocca",
+    "forklaring": "Italiensk kalvekød med skinke og salvie",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cacciatore",
+    "forklaring": "Italiensk jægergryde",
+    "kategori": "food"
+  },
+  {
+    "ord": "Parmigiana",
+    "forklaring": "Italiensk aubergine med ost",
+    "kategori": "food"
+  },
+  {
+    "ord": "Minestrone",
+    "forklaring": "Italiensk grøntsagssuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Ribollita",
+    "forklaring": "Toskansk brød og grøntsagssuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Stracciatella",
+    "forklaring": "Italiensk æggesuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Tortellini",
+    "forklaring": "Italienske fyldte pastapuder",
+    "kategori": "food"
+  },
+  {
+    "ord": "Ravioli",
+    "forklaring": "Italienske fyldte pastapuder",
+    "kategori": "food"
+  },
+  {
+    "ord": "Lasagne",
+    "forklaring": "Italiensk ret med lag af pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cannelloni",
+    "forklaring": "Italiensk fyldt pastarør",
+    "kategori": "food"
+  },
+  {
+    "ord": "Penne",
+    "forklaring": "Italiensk rørformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Fusilli",
+    "forklaring": "Italiensk spiralformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Linguine",
+    "forklaring": "Italiensk flad langpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Fettuccine",
+    "forklaring": "Italiensk bred langpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Tagliatelle",
+    "forklaring": "Italiensk bred langpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Pappardelle",
+    "forklaring": "Italiensk meget bred langpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Orecchiette",
+    "forklaring": "Italiensk øreformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Farfalle",
+    "forklaring": "Italiensk sommerfuglformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Conchiglie",
+    "forklaring": "Italiensk muslingeformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Rigatoni",
+    "forklaring": "Italiensk riflet rørepasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cavatelli",
+    "forklaring": "Italiensk hulformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Bucatini",
+    "forklaring": "Italiensk hul langpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Spaghetti",
+    "forklaring": "Italiensk tynd langpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Capellini",
+    "forklaring": "Italiensk meget tynd pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Vermicelli",
+    "forklaring": "Italiensk tynd pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Orzo",
+    "forklaring": "Italiensk risformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Ditalini",
+    "forklaring": "Italiensk lille rørpasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Stelline",
+    "forklaring": "Italiensk stjerneformet pasta",
+    "kategori": "food"
+  },
+  {
+    "ord": "Baguette",
+    "forklaring": "Fransk langbrød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Quiche",
+    "forklaring": "Fransk tærte",
+    "kategori": "food"
+  },
+  {
+    "ord": "Ratatouille",
+    "forklaring": "Fransk grøntsagsret",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cassoulet",
+    "forklaring": "Fransk bønnegryde",
+    "kategori": "food"
+  },
+  {
+    "ord": "Coq au vin",
+    "forklaring": "Fransk kylling i vin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Beef bourguignon",
+    "forklaring": "Fransk oksestuvning",
+    "kategori": "food"
+  },
+  {
+    "ord": "Escargots",
+    "forklaring": "Franske snegle",
+    "kategori": "food"
+  },
+  {
+    "ord": "Foie gras",
+    "forklaring": "Fransk gåselever",
+    "kategori": "food"
+  },
+  {
+    "ord": "Soufflé",
+    "forklaring": "Fransk luftig ret",
+    "kategori": "food"
+  },
+  {
+    "ord": "Mousse",
+    "forklaring": "Fransk cremet dessert",
+    "kategori": "food"
+  },
+  {
+    "ord": "Macaron",
+    "forklaring": "Fransk mandelsmåkage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Éclair",
+    "forklaring": "Fransk flødebolle",
+    "kategori": "food"
+  },
+  {
+    "ord": "Profiterole",
+    "forklaring": "Fransk vandbakkelse",
+    "kategori": "food"
+  },
+  {
+    "ord": "Madeleine",
+    "forklaring": "Fransk småkage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Crêpe",
+    "forklaring": "Fransk tynd pandekage",
+    "kategori": "food"
+  },
+  {
+    "ord": "Camembert",
+    "forklaring": "Fransk blødost",
+    "kategori": "food"
+  },
+  {
+    "ord": "Brie",
+    "forklaring": "Fransk blødost",
+    "kategori": "food"
+  },
+  {
+    "ord": "Roquefort",
+    "forklaring": "Fransk blåskimmelost",
+    "kategori": "food"
+  },
+  {
+    "ord": "Bordeaux vin",
+    "forklaring": "Fransk rødvin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Champagne",
+    "forklaring": "Fransk mousserende vin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Cognac",
+    "forklaring": "Fransk brandy",
+    "kategori": "food"
+  },
+  {
+    "ord": "Calvados",
+    "forklaring": "Fransk æblebrandy",
+    "kategori": "food"
+  },
+  {
+    "ord": "Béarnaise",
+    "forklaring": "Fransk sauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Hollandaise",
+    "forklaring": "Fransk sauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Mayonnaise",
+    "forklaring": "Fransk sauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Aioli",
+    "forklaring": "Fransk hvidløgsmayonnaise",
+    "kategori": "food"
+  },
+  {
+    "ord": "Vinaigrette",
+    "forklaring": "Fransk dressing",
+    "kategori": "food"
+  },
+  {
+    "ord": "Pâté",
+    "forklaring": "Fransk postej",
+    "kategori": "food"
+  },
+  {
+    "ord": "Terrine",
+    "forklaring": "Fransk pâté",
+    "kategori": "food"
+  },
+  {
+    "ord": "Confit",
+    "forklaring": "Fransk tilberedt kød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Gravad laks",
+    "forklaring": "Nordisk marineret laks",
+    "kategori": "food"
+  },
+  {
+    "ord": "Frikadeller",
+    "forklaring": "Danske kødboller",
+    "kategori": "food"
+  },
+  {
+    "ord": "Stegt flæsk",
+    "forklaring": "Dansk klassiker",
+    "kategori": "food"
+  },
+  {
+    "ord": "Rødgrød med fløde",
+    "forklaring": "Dansk dessert",
+    "kategori": "food"
+  },
+  {
+    "ord": "Æbleskiver",
+    "forklaring": "Danske bolleformede pandekager",
+    "kategori": "food"
+  },
+  {
+    "ord": "Flæskesteg",
+    "forklaring": "Dansk juleklassiker",
+    "kategori": "food"
+  },
+  {
+    "ord": "Leverpostej",
+    "forklaring": "Dansk pålæg",
+    "kategori": "food"
+  },
+  {
+    "ord": "Wienerbrød",
+    "forklaring": "Dansk butterdejsbagværk",
+    "kategori": "food"
+  },
+  {
+    "ord": "Remoulade",
+    "forklaring": "Dansk sauce",
+    "kategori": "food"
+  },
+  {
+    "ord": "Rugbrød",
+    "forklaring": "Dansk fuldkornsbrød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Pickled sild",
+    "forklaring": "Dansk syltet fisk",
+    "kategori": "food"
+  },
+  {
+    "ord": "Kringle",
+    "forklaring": "Dansk bagværk",
+    "kategori": "food"
+  },
+  {
+    "ord": "Brunsviger",
+    "forklaring": "Dansk sukkerbrød",
+    "kategori": "food"
+  },
+  {
+    "ord": "Koldskål",
+    "forklaring": "Dansk sommersuppe",
+    "kategori": "food"
+  },
+  {
+    "ord": "Risalamande",
+    "forklaring": "Dansk juleret",
+    "kategori": "food"
+  },
+  {
+    "ord": "Flødeboller",
+    "forklaring": "Dansk konfekt",
+    "kategori": "food"
+  },
+  {
+    "ord": "Lakridser",
+    "forklaring": "Dansk slik",
+    "kategori": "food"
+  },
+  {
+    "ord": "Gløgg",
+    "forklaring": "Nordisk varm krydret vin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Snaps",
+    "forklaring": "Nordisk snaps",
+    "kategori": "food"
+  },
+  {
+    "ord": "Aquavit",
+    "forklaring": "Nordisk brændevin",
+    "kategori": "food"
+  },
+  {
+    "ord": "Smørrebrødsfilet",
+    "forklaring": "Dansk pålæg",
+    "kategori": "food"
+  },
+  {
+    "ord": "Hønsesalat",
+    "forklaring": "Dansk pålæg",
+    "kategori": "food"
+  },
+  {
+    "ord": "Æggekage",
+    "forklaring": "Dansk omelet",
+    "kategori": "food"
+  },
+  {
+    "ord": "Amsterdam",
+    "forklaring": "Hovedstad i Holland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Paris",
+    "forklaring": "Frankrigs hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Berlin",
+    "forklaring": "Tysklands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Rom",
+    "forklaring": "Italiens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Madrid",
+    "forklaring": "Spaniens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Lissabon",
+    "forklaring": "Portugals hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Wien",
+    "forklaring": "Østrigs hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Budapest",
+    "forklaring": "Ungarns hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Prag",
+    "forklaring": "Tjekkiets hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Warszawa",
+    "forklaring": "Polens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Stockholm",
+    "forklaring": "Sveriges hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Helsinki",
+    "forklaring": "Finlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "København",
+    "forklaring": "Danmarks hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Dublin",
+    "forklaring": "Irlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Athen",
+    "forklaring": "Grækenlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bruxelles",
+    "forklaring": "Belgiens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Luxembourg",
+    "forklaring": "Hovedstad i Luxembourg",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Valletta",
+    "forklaring": "Maltas hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Nicosia",
+    "forklaring": "Cyperns hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Zagreb",
+    "forklaring": "Kroatiens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Ljubljana",
+    "forklaring": "Sloveniens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bratislava",
+    "forklaring": "Slovakiets hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Vilnius",
+    "forklaring": "Litauens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Riga",
+    "forklaring": "Letlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Tallinn",
+    "forklaring": "Estlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bukarest",
+    "forklaring": "Rumæniens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Sofia",
+    "forklaring": "Bulgariens hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Barcelona",
+    "forklaring": "Storby i Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Milano",
+    "forklaring": "Modeby i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "München",
+    "forklaring": "By i Bayern, Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Hamburg",
+    "forklaring": "Havneby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Marseille",
+    "forklaring": "Havneby i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Lyon",
+    "forklaring": "Gastronomisk by i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Sevilla",
+    "forklaring": "By i Andalusien, Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Valencia",
+    "forklaring": "Kystby i Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Napoli",
+    "forklaring": "Italiensk kystby",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Torino",
+    "forklaring": "Industriby i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Firenze",
+    "forklaring": "Renæssanceby i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Venedig",
+    "forklaring": "Kanalby i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Porto",
+    "forklaring": "Kystby i Portugal",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Rotterdam",
+    "forklaring": "Havneby i Holland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Antwerpen",
+    "forklaring": "Belgisk havneby",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Gent",
+    "forklaring": "Middelalderby i Belgien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Brugge",
+    "forklaring": "Kanalby i Belgien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Göteborg",
+    "forklaring": "Havneby i Sverige",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Malmö",
+    "forklaring": "By i Sydsverige",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Aarhus",
+    "forklaring": "By i Danmark",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Odense",
+    "forklaring": "H.C. Andersens fødeby",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Thessaloniki",
+    "forklaring": "Græsk kystby",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Krakow",
+    "forklaring": "Historisk by i Polen",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Gdansk",
+    "forklaring": "Havneby i Polen",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Wroclaw",
+    "forklaring": "By i Polen",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Frankfurt",
+    "forklaring": "Finansby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Köln",
+    "forklaring": "Domby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Düsseldorf",
+    "forklaring": "Modeby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Stuttgart",
+    "forklaring": "Bilby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Dresden",
+    "forklaring": "Barokby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Leipzig",
+    "forklaring": "Kulturby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Nürnberg",
+    "forklaring": "Middelalderby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Hannover",
+    "forklaring": "Messeby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bremen",
+    "forklaring": "Havneby i Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bordeaux",
+    "forklaring": "Vinby i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Toulouse",
+    "forklaring": "Den lyserøde by i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Nice",
+    "forklaring": "Rivieraen i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Strasbourg",
+    "forklaring": "By ved grænsen til Tyskland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Nantes",
+    "forklaring": "By i Vestfrankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Montpellier",
+    "forklaring": "Sydfransk by",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Lille",
+    "forklaring": "By i Nordfrankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Rennes",
+    "forklaring": "By i Bretagne",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Reims",
+    "forklaring": "Champagneby i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Le Havre",
+    "forklaring": "Havneby i Frankrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bilbao",
+    "forklaring": "Baskisk by i Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Málaga",
+    "forklaring": "Kystby i Sydspanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Zaragoza",
+    "forklaring": "By i det nordlige Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Murcia",
+    "forklaring": "By i det sydøstlige Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Palma",
+    "forklaring": "Hovedstad på Mallorca",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Las Palmas",
+    "forklaring": "By på Kanarieøerne",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Alicante",
+    "forklaring": "Kystby i Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Córdoba",
+    "forklaring": "Maurisk by i Spanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Granada",
+    "forklaring": "Maurisk by i Sydspanien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bologna",
+    "forklaring": "Gastronomisk by i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Genova",
+    "forklaring": "Havneby i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Palermo",
+    "forklaring": "Siciliansk hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Catania",
+    "forklaring": "By på Sicilien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Bari",
+    "forklaring": "Havneby i Syditalien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Verona",
+    "forklaring": "Romeo og Julie by",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Padova",
+    "forklaring": "Universitetsby i Italien",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Trieste",
+    "forklaring": "Havneby ved grænsen",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Salzburg",
+    "forklaring": "Mozarts fødeby",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Innsbruck",
+    "forklaring": "Alpeby i Østrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Graz",
+    "forklaring": "By i Østrig",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Edinburgh",
+    "forklaring": "Skotlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Glasgow",
+    "forklaring": "By i Skotland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Cardiff",
+    "forklaring": "Wales hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Belfast",
+    "forklaring": "Nordirlands hovedstad",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Manchester",
+    "forklaring": "Industriby i England",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Birmingham",
+    "forklaring": "Storby i England",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Liverpool",
+    "forklaring": "Havneby i England",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Leeds",
+    "forklaring": "By i England",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Newcastle",
+    "forklaring": "By i Nordengland",
+    "kategori": "cities"
+  },
+  {
+    "ord": "Minimalisme",
+    "forklaring": "Design med fokus på det essentielle",
+    "kategori": "design"
+  },
+  {
+    "ord": "Bauhaus",
+    "forklaring": "Tysk designskole fra 1920erne",
+    "kategori": "design"
+  },
+  {
+    "ord": "Art deco",
+    "forklaring": "Glamourøs stil fra 1920-30erne",
+    "kategori": "design"
+  },
+  {
+    "ord": "Brutalisme",
+    "forklaring": "Rå betonarkitektur",
+    "kategori": "design"
+  },
+  {
+    "ord": "Skandinavisk design",
+    "forklaring": "Nordisk funktionel æstetik",
+    "kategori": "design"
+  },
+  {
+    "ord": "Midcentury modern",
+    "forklaring": "Stil fra 1950-60erne",
+    "kategori": "design"
+  },
+  {
+    "ord": "Maximalisme",
+    "forklaring": "Design med meget udtryk og detaljer",
+    "kategori": "design"
+  },
+  {
+    "ord": "Funktionalisme",
+    "forklaring": "Form følger funktion",
+    "kategori": "design"
+  },
+  {
+    "ord": "Art nouveau",
+    "forklaring": "Organiske former fra 1890-1910",
+    "kategori": "design"
+  },
+  {
+    "ord": "Memphis-gruppen",
+    "forklaring": "Farverig 1980er postmodernisme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Streamline moderne",
+    "forklaring": "Afrundet aerodynamisk stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Industriel design",
+    "forklaring": "Rå elementer som synligt design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Shabby chic",
+    "forklaring": "Vintage med slidt charme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Bohemisk",
+    "forklaring": "Eklektisk og kunstnerisk stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Japandi",
+    "forklaring": "Blanding af japansk og skandinavisk",
+    "kategori": "design"
+  },
+  {
+    "ord": "Wabi-sabi",
+    "forklaring": "Japansk æstetik der værdsætter ufuldkommenhed",
+    "kategori": "design"
+  },
+  {
+    "ord": "Hygge-stil",
+    "forklaring": "Dansk indbydende komfort",
+    "kategori": "design"
+  },
+  {
+    "ord": "Coastal",
+    "forklaring": "Kystinspireret lyse farver",
+    "kategori": "design"
+  },
+  {
+    "ord": "Farmhouse",
+    "forklaring": "Landlig rustik stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Transitional",
+    "forklaring": "Blanding af klassisk og moderne",
+    "kategori": "design"
+  },
+  {
+    "ord": "Contemporary",
+    "forklaring": "Nutidig design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Eklektisk",
+    "forklaring": "Blanding af forskellige stilarter",
+    "kategori": "design"
+  },
+  {
+    "ord": "Hollywood Regency",
+    "forklaring": "Glamourøs og dramatisk",
+    "kategori": "design"
+  },
+  {
+    "ord": "Tropisk",
+    "forklaring": "Inspireret af tropiske regnskove",
+    "kategori": "design"
+  },
+  {
+    "ord": "Mediterran",
+    "forklaring": "Varm sydeuropæisk stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Rustik",
+    "forklaring": "Naturlig og upoleret",
+    "kategori": "design"
+  },
+  {
+    "ord": "Modern",
+    "forklaring": "Ren og simpel fra 1900-tallet",
+    "kategori": "design"
+  },
+  {
+    "ord": "Postmoderne",
+    "forklaring": "Reaktion mod modernisme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Dekonstructivisme",
+    "forklaring": "Fragmenteret og ikke-lineær",
+    "kategori": "design"
+  },
+  {
+    "ord": "High-tech",
+    "forklaring": "Synlig teknologi som design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Organisk",
+    "forklaring": "Inspireret af naturens former",
+    "kategori": "design"
+  },
+  {
+    "ord": "Parametrisk",
+    "forklaring": "Computergenerede komplekse former",
+    "kategori": "design"
+  },
+  {
+    "ord": "Biomorfisk",
+    "forklaring": "Levende organiske former",
+    "kategori": "design"
+  },
+  {
+    "ord": "Konstruktivisme",
+    "forklaring": "Russisk avant-garde fra 1920erne",
+    "kategori": "design"
+  },
+  {
+    "ord": "De Stijl",
+    "forklaring": "Hollandsk bevægelse med primærfarver",
+    "kategori": "design"
+  },
+  {
+    "ord": "Suprematisme",
+    "forklaring": "Abstrakt geometrisk kunst",
+    "kategori": "design"
+  },
+  {
+    "ord": "Futurisme",
+    "forklaring": "Bevægelse og hastighed",
+    "kategori": "design"
+  },
+  {
+    "ord": "Dadaisme",
+    "forklaring": "Anti-kunst bevægelse",
+    "kategori": "design"
+  },
+  {
+    "ord": "Surrealisme",
+    "forklaring": "Drømmeagtige irrationelle billeder",
+    "kategori": "design"
+  },
+  {
+    "ord": "Kubisme",
+    "forklaring": "Geometriske fragmenterede former",
+    "kategori": "design"
+  },
+  {
+    "ord": "Expressionisme",
+    "forklaring": "Følelser over realisme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Impressionisme",
+    "forklaring": "Lysets og øjeblikkets indtryk",
+    "kategori": "design"
+  },
+  {
+    "ord": "Rokoko",
+    "forklaring": "Ornamental 1700-tals stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Barok",
+    "forklaring": "Dramatisk og detaljeret stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Renæssance",
+    "forklaring": "Klassisk genfødt stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Gotisk",
+    "forklaring": "Middelalderens spidsbuede stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Viktoriansk",
+    "forklaring": "Ornamental 1800-tals stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Georgian",
+    "forklaring": "Engelsk klassicisme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Federal",
+    "forklaring": "Tidlig amerikansk klassicisme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Colonial",
+    "forklaring": "Kolonial amerikansk stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Tudor",
+    "forklaring": "Engelsk bindingsværk",
+    "kategori": "design"
+  },
+  {
+    "ord": "Edwardian",
+    "forklaring": "Elegant tidlig 1900-tals stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "Arts and Crafts",
+    "forklaring": "Håndværksbevægelse",
+    "kategori": "design"
+  },
+  {
+    "ord": "Prairie School",
+    "forklaring": "Frank Lloyd Wright stil",
+    "kategori": "design"
+  },
+  {
+    "ord": "International Style",
+    "forklaring": "Modernistisk glas og stål",
+    "kategori": "design"
+  },
+  {
+    "ord": "Metabolism",
+    "forklaring": "Japansk organisk arkitektur",
+    "kategori": "design"
+  },
+  {
+    "ord": "Biophilic",
+    "forklaring": "Design der forbinder med naturen",
+    "kategori": "design"
+  },
+  {
+    "ord": "Sustainable",
+    "forklaring": "Miljøvenligt design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Upcycling",
+    "forklaring": "Genanvendelse i nyt design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Zero waste",
+    "forklaring": "Design uden affald",
+    "kategori": "design"
+  },
+  {
+    "ord": "Circular design",
+    "forklaring": "Cirkulær økonomi i design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Universal design",
+    "forklaring": "Design for alle",
+    "kategori": "design"
+  },
+  {
+    "ord": "Inclusive design",
+    "forklaring": "Design der inkluderer alle",
+    "kategori": "design"
+  },
+  {
+    "ord": "Responsive design",
+    "forklaring": "Tilpasning til forskellige skærme",
+    "kategori": "design"
+  },
+  {
+    "ord": "Adaptive design",
+    "forklaring": "Design der tilpasser sig brugeren",
+    "kategori": "design"
+  },
+  {
+    "ord": "User-centered",
+    "forklaring": "Design fokuseret på brugeren",
+    "kategori": "design"
+  },
+  {
+    "ord": "Human-centered",
+    "forklaring": "Design fokuseret på mennesker",
+    "kategori": "design"
+  },
+  {
+    "ord": "Service design",
+    "forklaring": "Design af serviceydelser",
+    "kategori": "design"
+  },
+  {
+    "ord": "Experience design",
+    "forklaring": "Design af oplevelser",
+    "kategori": "design"
+  },
+  {
+    "ord": "Interaction design",
+    "forklaring": "Design af interaktioner",
+    "kategori": "design"
+  },
+  {
+    "ord": "Interface design",
+    "forklaring": "Design af brugergrænseflader",
+    "kategori": "design"
+  },
+  {
+    "ord": "Visual design",
+    "forklaring": "Æstetisk visuel formgivning",
+    "kategori": "design"
+  },
+  {
+    "ord": "Graphic design",
+    "forklaring": "Grafisk kommunikation",
+    "kategori": "design"
+  },
+  {
+    "ord": "Typography",
+    "forklaring": "Kunst og håndværk med bogstaver",
+    "kategori": "design"
+  },
+  {
+    "ord": "Layout",
+    "forklaring": "Elementernes placering",
+    "kategori": "design"
+  },
+  {
+    "ord": "Composition",
+    "forklaring": "Elementer samlet til helhed",
+    "kategori": "design"
+  },
+  {
+    "ord": "Grid system",
+    "forklaring": "Gitterstruktur i design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Whitespace",
+    "forklaring": "Tomt rum i design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Hierarchy",
+    "forklaring": "Vigtighed gennem design",
+    "kategori": "design"
+  },
+  {
+    "ord": "Contrast",
+    "forklaring": "Forskelle der skaber interesse",
+    "kategori": "design"
+  },
+  {
+    "ord": "Balance",
+    "forklaring": "Visuel ligevægt",
+    "kategori": "design"
+  },
+  {
+    "ord": "Proportion",
+    "forklaring": "Forhold mellem elementer",
+    "kategori": "design"
+  },
+  {
+    "ord": "Scale",
+    "forklaring": "Størrelse i forhold til andet",
+    "kategori": "design"
+  },
+  {
+    "ord": "Rhythm",
+    "forklaring": "Gentagelse der skaber flow",
+    "kategori": "design"
+  },
+  {
+    "ord": "Harmony",
+    "forklaring": "Behagelig sammenhæng",
+    "kategori": "design"
+  },
+  {
+    "ord": "Unity",
+    "forklaring": "Elementer der virker sammen",
+    "kategori": "design"
+  },
+  {
+    "ord": "Variety",
+    "forklaring": "Variation for interesse",
+    "kategori": "design"
+  },
+  {
+    "ord": "Emphasis",
+    "forklaring": "Fremhævelse af fokuspunkt",
+    "kategori": "design"
+  },
+  {
+    "ord": "Movement",
+    "forklaring": "Vejledning af øjet",
+    "kategori": "design"
+  },
+  {
+    "ord": "Pattern",
+    "forklaring": "Gentagne elementer",
+    "kategori": "design"
+  },
+  {
+    "ord": "Texture",
+    "forklaring": "Overfladens følelse",
+    "kategori": "design"
+  },
+  {
+    "ord": "Color theory",
+    "forklaring": "Principperne for farvevalg",
+    "kategori": "design"
+  },
+  {
+    "ord": "Color palette",
+    "forklaring": "Udvalg af farver",
+    "kategori": "design"
+  },
+  {
+    "ord": "Monochromatic",
+    "forklaring": "Nuancer af én farve",
+    "kategori": "design"
+  },
+  {
+    "ord": "Analogous",
+    "forklaring": "Farver ved siden af hinanden",
+    "kategori": "design"
+  },
+  {
+    "ord": "Complementary",
+    "forklaring": "Modstående farver",
+    "kategori": "design"
+  },
+  {
+    "ord": "Triadic",
+    "forklaring": "Tre jævnt fordelte farver",
+    "kategori": "design"
+  },
+  {
+    "ord": "Gradient",
+    "forklaring": "Glidende farveovergang",
+    "kategori": "design"
+  },
+  {
+    "ord": "Saturation",
+    "forklaring": "Farvens intensitet",
+    "kategori": "design"
+  },
+  {
+    "ord": "Hue",
+    "forklaring": "Farvens grundtone",
+    "kategori": "design"
+  },
+  {
+    "ord": "Value",
+    "forklaring": "Farvens lysstyrke",
+    "kategori": "design"
+  },
+  {
+    "ord": "Forelskelse",
+    "forklaring": "Den første intense tiltrækning",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Tiltrækning",
+    "forklaring": "Følelse af at blive draget mod nogen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kemi",
+    "forklaring": "Naturlig gnist mellem to mennesker",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Flirt",
+    "forklaring": "Legende tegn på interesse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kærlighed",
+    "forklaring": "Dyb følelsesmæssig forbindelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Intimitet",
+    "forklaring": "Nær og personlig forbindelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Nærhed",
+    "forklaring": "Følelse af at være tæt på nogen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Forbindelse",
+    "forklaring": "Dyb forståelse mellem to mennesker",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Romantik",
+    "forklaring": "Udtryk for kærlighed og omsorg",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Lidenskab",
+    "forklaring": "Intens følelse og attraktion",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Begær",
+    "forklaring": "Stærk fysisk tiltrækning",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Forførelse",
+    "forklaring": "Kunst at tiltrække og friste",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Charme",
+    "forklaring": "Tiltrækkende personlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Karisma",
+    "forklaring": "Magnetisk tilstedeværelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Tilnærmelse",
+    "forklaring": "At vise interesse i nogen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kompliment",
+    "forklaring": "Ros til at vise interesse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kærlighedserklæring",
+    "forklaring": "At udtrykke sine følelser",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Frieri",
+    "forklaring": "At bede om nogens hånd",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kys",
+    "forklaring": "Intimt udtryk for følelser",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kram",
+    "forklaring": "Fysisk udtryk for omsorg",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Øjenkontakt",
+    "forklaring": "Nonverbal forbindelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Smil",
+    "forklaring": "Udtryk for glæde og interesse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Rødmen",
+    "forklaring": "Kropssprog ved nervøsitet",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Sommerfugle i maven",
+    "forklaring": "Følelse ved tiltrækning",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Hjertebank",
+    "forklaring": "Fysisk reaktion på forelskelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Nervøsitet",
+    "forklaring": "Spænding ved interesse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Sårbarhed",
+    "forklaring": "At åbne sig op for nogen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Tillid",
+    "forklaring": "Fundamental basis for forhold",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Ærlighed",
+    "forklaring": "Åbenhed i forhold",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kommunikation",
+    "forklaring": "Nøglen til gode forhold",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Forståelse",
+    "forklaring": "At virkelig se hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Empati",
+    "forklaring": "At kunne føle med hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Støtte",
+    "forklaring": "At være der for hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Omsorg",
+    "forklaring": "At passe på hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Respekt",
+    "forklaring": "At værdsætte hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Loyalitet",
+    "forklaring": "At stå ved hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Forpligtelse",
+    "forklaring": "At vælge hinanden",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Partnerskab",
+    "forklaring": "At være sammen som team",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Sjælefrænde",
+    "forklaring": "Perfect match",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kæreste",
+    "forklaring": "Romantisk partner",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Sammen",
+    "forklaring": "I et forhold",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Dato",
+    "forklaring": "Romantisk møde",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Første date",
+    "forklaring": "Indledende romantisk møde",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Stævnemøde",
+    "forklaring": "Planlagt romantisk tid",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Restaurant",
+    "forklaring": "Klassisk date sted",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Middag ved levende lys",
+    "forklaring": "Romantisk aften",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Gåtur",
+    "forklaring": "Uformel tid sammen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Biograf",
+    "forklaring": "Klassisk date aktivitet",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Picnic",
+    "forklaring": "Romantisk udendørs måltid",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Solnedgang",
+    "forklaring": "Romantisk naturskue",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Stjernehimmel",
+    "forklaring": "Romantisk natteoplevelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Strand",
+    "forklaring": "Romantisk destination",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Blomster",
+    "forklaring": "Klassisk romantisk gave",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Roser",
+    "forklaring": "Symbol på kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Chokolade",
+    "forklaring": "Sød romantisk gave",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Gave",
+    "forklaring": "Udtryk for omsorg",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Overraskelse",
+    "forklaring": "Uventet romantisk gestus",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kærlighedsbrev",
+    "forklaring": "Skrevet udtryk for følelser",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kærlighedssang",
+    "forklaring": "Musikalsk udtryk for kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Poesi",
+    "forklaring": "Lyrisk udtryk for romantik",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Dans",
+    "forklaring": "Fysisk udtryk sammen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Slowdance",
+    "forklaring": "Intim dans",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Valentin",
+    "forklaring": "Dag for kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Bryllup",
+    "forklaring": "Ceremoni for forening",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Forlovelse",
+    "forklaring": "Løfte om ægteskab",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Ring",
+    "forklaring": "Symbol på forpligtelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Ægteskab",
+    "forklaring": "Livslang forening",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Bryllupsrejse",
+    "forklaring": "Romantisk ferie",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Jubilæum",
+    "forklaring": "Fejring af forhold",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kælenavn",
+    "forklaring": "Øgenavne for partnere",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Skat",
+    "forklaring": "Kærligt øgenavn",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Min elskede",
+    "forklaring": "Udtryk for dyb kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Længsel",
+    "forklaring": "Følelse af at savne nogen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Savne",
+    "forklaring": "At mangle nogens nærvær",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Genforening",
+    "forklaring": "At mødes efter adskillelse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Hånd i hånd",
+    "forklaring": "Simpelt intimt udtryk",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Krammesession",
+    "forklaring": "Kvalitetstid med fysisk nærhed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Weekendtur",
+    "forklaring": "Romantisk flugt",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Morgenmad på sengen",
+    "forklaring": "Omsorgfuld gestus",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Fælles interesser",
+    "forklaring": "Ting at dele",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Indre vittigheder",
+    "forklaring": "Privat humor",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kærtegn",
+    "forklaring": "Små fysiske udtryk",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Øjeblikke",
+    "forklaring": "Særlige minder sammen",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kærlighedshistorie",
+    "forklaring": "Jeres fælles fortælling",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Matchmaking",
+    "forklaring": "At hjælpe folk med at mødes",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Online dating",
+    "forklaring": "Moderne måde at møde folk",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Dating app",
+    "forklaring": "Digital platform for møder",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Profil",
+    "forklaring": "Præsentation af sig selv",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Swipe right",
+    "forklaring": "At vise interesse digitalt",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Match",
+    "forklaring": "Gensidig interesse",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Besked",
+    "forklaring": "Digital kommunikation",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Icebreaker",
+    "forklaring": "Første kontakt",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Small talk",
+    "forklaring": "Let snak for at lære hinanden at kende",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Dyb samtale",
+    "forklaring": "Meningsfuld udveksling",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Soulmate",
+    "forklaring": "Den perfekte partner",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Destiny",
+    "forklaring": "Skæbne i kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Eternal love",
+    "forklaring": "Evigvarende kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "True love",
+    "forklaring": "Sand kærlighed",
+    "kategori": "romance"
+  },
+  {
+    "ord": "Kongerige",
+    "forklaring": "Magisk land styret af royalty",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Tronstrid",
+    "forklaring": "Kamp om magten",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Kronen",
+    "forklaring": "Symbol på royal magt",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Prinsesse",
+    "forklaring": "Royal kvindelig hovedperson",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Prins",
+    "forklaring": "Royal mandlig hovedperson",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Forbudt kærlighed",
+    "forklaring": "Romance på tværs af grænser",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Skæbnekærlighed",
+    "forklaring": "Kærlighed bestemt af magien",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Soulbond",
+    "forklaring": "Magisk forbindelse mellem sjæle",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Matesøgning",
+    "forklaring": "Quest efter ens forudbestemte partner",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk bånd",
+    "forklaring": "Ubrydelig forbindelse",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Blodpagt",
+    "forklaring": "Magisk aftale forseglet med blod",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Fortryllelse",
+    "forklaring": "Magisk påvirkning",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Forbandelse",
+    "forklaring": "Mørk magi der hindrer",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "True love's kiss",
+    "forklaring": "Kærlighedens magi der bryder forbandelser",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Skjult identitet",
+    "forklaring": "Hemmeligt om hvem man er",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Shapeshifter",
+    "forklaring": "Væsen der kan skifte form",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Fae-høvding",
+    "forklaring": "Mægtig alfeleader",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Vampire lord",
+    "forklaring": "Aristokratisk vampyr",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Dæmonprins",
+    "forklaring": "Royal fra underverdenen",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Dragerytter",
+    "forklaring": "Kriger bundet til drage",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magiker",
+    "forklaring": "Udøver af magisk kunst",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Nekromant",
+    "forklaring": "Behersker af dødens magi",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Spåkone",
+    "forklaring": "Den der kan se fremtiden",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Profeti",
+    "forklaring": "Forudsigelse af skæbnen",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Udvalgt",
+    "forklaring": "Den der er forudbestemt til storhed",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Krigerklan",
+    "forklaring": "Stolt kampgruppe",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Adelsfamilie",
+    "forklaring": "Mægtig slægt",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Tjenestepige",
+    "forklaring": "Fattig pige med skjult skæbne",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Bodyguard",
+    "forklaring": "Beskytter med loyalitet",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Politisk intrige",
+    "forklaring": "Magtspil i hoffet",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Arrangeret ægteskab",
+    "forklaring": "Tvunget forening",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Rivaler til elskende",
+    "forklaring": "Fra fjender til kærester",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Enemies to lovers",
+    "forklaring": "Klassisk romantasy trope",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Slow burn",
+    "forklaring": "Langsomt udviklende romance",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Love triangle",
+    "forklaring": "Tre hjerter i konflikt",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Beskyttelsespagt",
+    "forklaring": "Magisk løfte om sikkerhed",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Skjult arv",
+    "forklaring": "Hemmeligt noble ophav",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magiske evner",
+    "forklaring": "Unikke kræfter",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Elementstyring",
+    "forklaring": "Kontrol over naturkræfter",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Ildmagi",
+    "forklaring": "Evnen til at beherske flammer",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Ismagi",
+    "forklaring": "Kontrol over frost og kulde",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Skyggemagi",
+    "forklaring": "Mørkets kræfter",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Lysmagi",
+    "forklaring": "Renhedens kraft",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Tankekontrol",
+    "forklaring": "Evnen til at påvirke sind",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Drømmegang",
+    "forklaring": "At besøge andres drømme",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Tidsrejse",
+    "forklaring": "Bevægelse gennem tiden",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Portal",
+    "forklaring": "Magisk dør mellem verdener",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Parallel verden",
+    "forklaring": "Alternativ virkelighed",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk akademi",
+    "forklaring": "Skole for magiske talenter",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Fae court",
+    "forklaring": "Alfernes hoffmiljø",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Underjordisk rige",
+    "forklaring": "Skjult magisk verden",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Himmelborg",
+    "forklaring": "Slot i skyerne",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Fortryllet skov",
+    "forklaring": "Magisk skovområde",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Krystalgrotte",
+    "forklaring": "Hule med magiske krystaller",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Eldgammelt bibliotek",
+    "forklaring": "Lager af magisk viden",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk artefakt",
+    "forklaring": "Genstand med kraft",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Trylleformular",
+    "forklaring": "Gammel bog med besværgelser",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk våben",
+    "forklaring": "Fortryllet kampredskab",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Hellig relik",
+    "forklaring": "Religiøs genstand med magt",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Skjult styrke",
+    "forklaring": "Uopdaget potentiale",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Transformation",
+    "forklaring": "Magisk forvandling",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Awakening",
+    "forklaring": "Magtens vågnen",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Blodarv",
+    "forklaring": "Magt nedarvet gennem slægt",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Royal bloodline",
+    "forklaring": "Kongelig afstamning",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk træning",
+    "forklaring": "At lære at kontrollere kræfter",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Mentor",
+    "forklaring": "Erfaren vejleder i magien",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Kamp-partner",
+    "forklaring": "Den man kæmper side om side med",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Beskytter-instinkt",
+    "forklaring": "Dyb trang til at forsvare",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Sårbar styrke",
+    "forklaring": "At vise svaghed er mod",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Offervilje",
+    "forklaring": "At give alt for den man elsker",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Redning",
+    "forklaring": "At frelse sin elskede",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Quest",
+    "forklaring": "Rejse med formål",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk kontrakt",
+    "forklaring": "Bindende aftale",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Udveksling",
+    "forklaring": "Noget givet for noget fået",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Prisen for magt",
+    "forklaring": "Hvad magi koster",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Loyal ledsager",
+    "forklaring": "Trofast følgesvend",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk dyrekammerat",
+    "forklaring": "Intelligent magisk dyr",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Familjeloyalitet",
+    "forklaring": "Binding til slægten",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Forræderi",
+    "forklaring": "Smertefuldt svigt",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Tilgivelse",
+    "forklaring": "At forsone sig",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Anden chance",
+    "forklaring": "Mulighed for forløsning",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Genopstandelse",
+    "forklaring": "Tilbagevenden fra døden",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Udødelighed",
+    "forklaring": "Evigt liv",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Tidløs kærlighed",
+    "forklaring": "Romance gennem århundreder",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Reinkarnation",
+    "forklaring": "Sjæle der mødes igen",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Skæbnens spind",
+    "forklaring": "Uundgåelig magisk fremtid",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Magisk ritual",
+    "forklaring": "Ceremoni med kraft",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Besværgelse",
+    "forklaring": "Udtalt magi",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Forbandelsesbryder",
+    "forklaring": "Den der kan ophæve mørk magi",
+    "kategori": "romantasy"
+  },
+  {
+    "ord": "Lingeri",
+    "forklaring": "Elegant undertøj",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Blonde",
+    "forklaring": "Delikat stof",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Silke",
+    "forklaring": "Luksuriøst materiale",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Satin",
+    "forklaring": "Glat og skinnende",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Balconette",
+    "forklaring": "BH-stil med åben top",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Push-up",
+    "forklaring": "Løftende BH",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Bralette",
+    "forklaring": "Blød BH uden bøjle",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Bodystocking",
+    "forklaring": "Heldragt i net",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Strømpebælte",
+    "forklaring": "Holder til strømper",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Strømper",
+    "forklaring": "Elegante benklæder",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Strømpebukser",
+    "forklaring": "Undertøj til ben",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Kimono",
+    "forklaring": "Silkemorgenkåbe",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Babydoll",
+    "forklaring": "Kort natkjole",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Chemise",
+    "forklaring": "Silkenatkjole",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Negligé",
+    "forklaring": "Forførende natkjole",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Pyjamas",
+    "forklaring": "Nattøj",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Morgendragt",
+    "forklaring": "Loungewear",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Korsetter",
+    "forklaring": "Formgivende tøj",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Bodysuits",
+    "forklaring": "Enhedsdragt",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Tanga",
+    "forklaring": "Minimal trusse",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Hotpants",
+    "forklaring": "Korte shorts",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "G-streng",
+    "forklaring": "Minimal undertøj",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Hipster",
+    "forklaring": "Trusse med lav talje",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Klassisk",
+    "forklaring": "Traditionel truseform",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Højtaljede",
+    "forklaring": "Truser med høj talje",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Strappy",
+    "forklaring": "Med remme",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Cami",
+    "forklaring": "Undertop",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Teddy",
+    "forklaring": "Heldragt i ét stykke",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Bustier",
+    "forklaring": "Kort korset",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Suspender",
+    "forklaring": "Strømpeholder",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Fishnet",
+    "forklaring": "Net-materiale",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Mesh",
+    "forklaring": "Gennemsigtigt net",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Chiffon",
+    "forklaring": "Let gennemsigtigt stof",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Sheer",
+    "forklaring": "Gennemsigtigt",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Broderet",
+    "forklaring": "Med syede detaljer",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Pailetter",
+    "forklaring": "Glimrende pyntning",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Rysjer",
+    "forklaring": "Romantiske folder",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Sløjfer",
+    "forklaring": "Dekorative bånd",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Perler",
+    "forklaring": "Elegante detaljer",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Cut-out",
+    "forklaring": "Strategiske åbninger",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Dyb udskæring",
+    "forklaring": "Fremhævende snit",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Halterneck",
+    "forklaring": "Binding om nakken",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Stropløs",
+    "forklaring": "Uden stropper",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Justerbare stropper",
+    "forklaring": "Tilpasselige bånd",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Bøjle",
+    "forklaring": "Støtte i BH",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Polstret",
+    "forklaring": "Med ekstra fyld",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Uforet",
+    "forklaring": "Uden polstring",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Seamless",
+    "forklaring": "Uden synlige sømme",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Blonde detaljer",
+    "forklaring": "Dekorativ blonde",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Transparent",
+    "forklaring": "Gennemsigtigt materiale",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Feminin",
+    "forklaring": "Elegant og kvindelig",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Forførende",
+    "forklaring": "Tiltrækkende stil",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Komfortabel",
+    "forklaring": "Behagelig at have på",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Supporterende",
+    "forklaring": "Giver god støtte",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Formgivende",
+    "forklaring": "Former silhuetten",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Åndbart",
+    "forklaring": "Luftigt materiale",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Stretch",
+    "forklaring": "Elastisk stof",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Tilpasset pasform",
+    "forklaring": "Perfekt siddende",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Luksus",
+    "forklaring": "Eksklusiv kvalitet",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Premium",
+    "forklaring": "Højkvalitets",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Designer",
+    "forklaring": "Eksklusivt mærke",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Fransk stil",
+    "forklaring": "Elegant parisisk",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Vintage",
+    "forklaring": "Retro-inspireret",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Moderne",
+    "forklaring": "Nutidig stil",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Klassisk",
+    "forklaring": "Tidløst design",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Romantisk",
+    "forklaring": "Blød og feminin",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Sensuelt",
+    "forklaring": "Følelsesbetonet",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Elegant",
+    "forklaring": "Raffineret stil",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Sofistikeret",
+    "forklaring": "Kultiveret udtryk",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Glamourøs",
+    "forklaring": "Overdådigt smukt",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Diskret",
+    "forklaring": "Subtilt design",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Statement",
+    "forklaring": "Dristigt udtryk",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Minimalistisk",
+    "forklaring": "Enkelt design",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Detaljeret",
+    "forklaring": "Med mange detaljer",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Håndlavet",
+    "forklaring": "Fremstillet med omhu",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Eksklusivt",
+    "forklaring": "Unikt og særligt",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Konfident",
+    "forklaring": "Styrker selvtilliden",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Empowering",
+    "forklaring": "Styrkende effekt",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Selvomsorg",
+    "forklaring": "At forkæle sig selv",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Kropspositivitet",
+    "forklaring": "At elske sin krop",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Inklusive størrelser",
+    "forklaring": "For alle kropsforme",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Skræddersyet",
+    "forklaring": "Personligt tilpasset",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Mix and match",
+    "forklaring": "Kombinerbare dele",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Brude-lingeri",
+    "forklaring": "Specielt til bryllup",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Hvidt sæt",
+    "forklaring": "Klassisk hvid samling",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Sort blonde",
+    "forklaring": "Elegant sort detalje",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Rød passion",
+    "forklaring": "Lidenskabelig farve",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Pastel",
+    "forklaring": "Bløde farvetoner",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Dyb farve",
+    "forklaring": "Rig farvetone",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Nøgen tone",
+    "forklaring": "Neutral hudfarvenuance",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Mønster",
+    "forklaring": "Dekorativt design",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Blomsterprint",
+    "forklaring": "Blomsterdekoreret",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Geometrisk",
+    "forklaring": "Struktureret design",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Kollektion",
+    "forklaring": "Samlet serie",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Basisgarderobe",
+    "forklaring": "Essentielle dele",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Dagligdags",
+    "forklaring": "Til hverdagsbrug",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Særlige lejligheder",
+    "forklaring": "Til festlige anledninger",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Sæt",
+    "forklaring": "Matchende dele",
+    "kategori": "intimate"
+  },
+  {
+    "ord": "Comfort zone",
+    "forklaring": "Behageligt undertøj",
+    "kategori": "intimate"
+  }
 ]
