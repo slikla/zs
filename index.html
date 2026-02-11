@@ -340,7 +340,6 @@
         // Word pool storage
         let wordPool = {};
         let currentIndex = {};
-        const PATTERN = [0, 2, 6, 12, 18, 20, 27]; // Pattern: 1-3-7-13-19-21-28 (0-indexed)
 
         async function preloadWords(theme) {
             try {
@@ -351,10 +350,10 @@
                     },
                     body: JSON.stringify({
                         model: 'claude-sonnet-4-20250514',
-                        max_tokens: 15000,
+                        max_tokens: 8000,
                         messages: [{
                             role: 'user',
-                            content: `Generer 30 tilfældige ${theme === 'names' ? 'moderne danske fornavne (MINDST 7 bogstaver)' : theme === 'mammals' ? 'pattedyr (kun pattedyr - ingen fugle, fisk eller reptiler)' : theme === 'mixed' ? 'ord fra forskellige temaer (pattedyr, moderne danske fornavne 7+ bogstaver, astronomi, mad, EU byer, design stilarter, dating/romantik, romantasy, erotik/undertøj)' : 'danske ord fra ' + themes[theme].name + ' temaet'}.
+                            content: `Generer 20 tilfældige ${theme === 'names' ? 'moderne danske fornavne (MINDST 7 bogstaver)' : theme === 'mammals' ? 'pattedyr (kun pattedyr - ingen fugle, fisk eller reptiler)' : theme === 'mixed' ? 'ord fra forskellige temaer (pattedyr, moderne danske fornavne 7+ bogstaver, astronomi, mad, EU byer, design stilarter, dating/romantik, romantasy, erotik/undertøj)' : 'danske ord fra ' + themes[theme].name + ' temaet'}.
 
 ${theme === 'names' ? 'For hvert navn skal du give:\n1. Navnet (moderne dansk fornavn med MINDST 7 bogstaver)\n2. Type: "Fornavn"\n3. Navnets betydning og oprindelse (1-2 sætninger)\n4. En sætning om en person med dette navn (eksempel: "Caroline er kendt for sin kreativitet")' : 'For hvert ord skal du give:\n1. Ordet selv (på dansk)\n2. Ordklasse (substantiv, verbum, adjektiv osv.)\n3. En kort, præcis definition (1-2 sætninger)\n4. En naturlig eksempelsætning der bruger ordet'}
 
@@ -419,22 +418,21 @@ Vær kreativ og varieret. ${theme === 'intimate' ? 'For erotik/undertøj temaet:
                     generateBtn.disabled = false;
                 }
 
-                // Get words using the pattern - INSTANT!
+                // Get 5 sequential words - INSTANT!
                 const words = [];
                 const pool = wordPool[theme];
                 const startIdx = currentIndex[theme];
                 
                 for (let i = 0; i < 5; i++) {
-                    const patternOffset = PATTERN[i % PATTERN.length];
-                    const wordIdx = (startIdx + patternOffset) % pool.length;
+                    const wordIdx = (startIdx + i) % pool.length;
                     words.push(pool[wordIdx]);
                 }
                 
-                // Move to next pattern position
-                currentIndex[theme] = (startIdx + 7) % pool.length;
+                // Move forward by 5 positions
+                currentIndex[theme] = (startIdx + 5) % pool.length;
                 
                 // If we've cycled through, reload fresh words in background
-                if (currentIndex[theme] < 7) {
+                if (currentIndex[theme] < 5) {
                     setTimeout(() => preloadWords(theme), 100);
                 }
 
