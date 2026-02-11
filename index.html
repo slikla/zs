@@ -4,76 +4,369 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nikolajs Ord Generator</title>
-
 <style>
-body { font-family: Arial, sans-serif; background:#fff; margin:0; padding:40px }
-h1 { text-align:center; margin-bottom:30px }
-.controls { text-align:center; margin-bottom:20px }
-button { padding:10px 20px; font-size:16px; cursor:pointer }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: white;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid #ecf0f1;
+  background: white;
+  color: #7f8c8d;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: #2c3e50;
+  color: #2c3e50;
+}
+
+.filter-btn.active {
+  background: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+}
+
 #words {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
 }
+
 .word {
-  border:4px solid #000;
-  padding:20px;
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #3498db;
+  animation: fadeIn 0.5s ease;
 }
-.type {
-  display:inline-block;
-  background:#000;
-  color:#fff;
-  padding:4px 10px;
-  margin:8px 0;
-  font-size:12px;
+
+.word:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-weight: 400;
+}
+
+.category-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.word p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.loading {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  padding: 40px;
+}
+
+.error {
+  text-align: center;
+  color: #e74c3c;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.stats {
+  text-align: center;
+  margin: 2rem 0;
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+/* Category colors */
+.word[data-category="mammals"] { border-left-color: #3498db; }
+.word[data-category="names"] { border-left-color: #e74c3c; }
+.word[data-category="astronomy"] { border-left-color: #9b59b6; }
+.word[data-category="food"] { border-left-color: #f39c12; }
+.word[data-category="cities"] { border-left-color: #1abc9c; }
+.word[data-category="design"] { border-left-color: #e91e63; }
+.word[data-category="romance"] { border-left-color: #ff6b6b; }
+.word[data-category="romantasy"] { border-left-color: #a29bfe; }
+.word[data-category="intimate"] { border-left-color: #fd79a8; }
+
+/* Category badge colors */
+.category-badge[data-category="mammals"] { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.category-badge[data-category="names"] { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+.category-badge[data-category="astronomy"] { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+.category-badge[data-category="food"] { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+.category-badge[data-category="cities"] { background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); }
+.category-badge[data-category="design"] { background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%); }
+.category-badge[data-category="romance"] { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); }
+.category-badge[data-category="romantasy"] { background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%); }
+.category-badge[data-category="intimate"] { background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%); }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #words {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
-
 <body>
+<div class="container">
+  <h1>Nikolajs Ord Generator</h1>
+  <p class="subtitle">Udforsk spændende ord på tværs af forskellige kategorier</p>
+  
+  <div class="controls">
+    <button class="btn" onclick="generate()">🎲 Generer nye ord</button>
+    <button class="btn" onclick="generateAll()">📚 Vis alle ord</button>
+  </div>
 
-<h1>Nikolajs Ord Generator</h1>
-
-<div class="controls">
-  <button onclick="generate()">Generer nye ord</button>
+  <div class="filter-container" id="filters"></div>
+  
+  <div class="stats" id="stats"></div>
+  
+  <div id="words">
+    <div class="loading">Indlæser ord...</div>
+  </div>
 </div>
-
-<div id="words"></div>
 
 <script>
 let ORDSAMLING = [];
+let currentFilter = 'alle';
+const CATEGORY_NAMES = {
+  mammals: 'Pattedyr',
+  names: 'Navne',
+  astronomy: 'Astronomi',
+  food: 'Mad',
+  cities: 'Byer',
+  design: 'Design',
+  romance: 'Romantik',
+  romantasy: 'Romantasy',
+  intimate: 'Intim'
+};
 
 async function loadWords() {
   try {
     const response = await fetch('ordsamling.json');
     ORDSAMLING = await response.json();
+    createFilters();
     generate();
+    updateStats();
   } catch (error) {
     console.error('Kunne ikke indlæse ord:', error);
     document.getElementById('words').innerHTML = 
-      '<p style="text-align:center;color:red;">Fejl: Kunne ikke indlæse ordsamling.json</p>';
+      '<div class="error">❌ Fejl: Kunne ikke indlæse ordsamling.json<br><small>Sørg for at filen findes i samme mappe som HTML-filen</small></div>';
   }
+}
+
+function createFilters() {
+  const categories = [...new Set(ORDSAMLING.map(w => w.kategori))];
+  const filterContainer = document.getElementById('filters');
+  
+  // Alle knap
+  const allBtn = document.createElement('button');
+  allBtn.className = 'filter-btn active';
+  allBtn.textContent = 'Alle';
+  allBtn.onclick = () => setFilter('alle');
+  filterContainer.appendChild(allBtn);
+  
+  // Kategori knapper
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.textContent = CATEGORY_NAMES[cat] || cat;
+    btn.onclick = () => setFilter(cat);
+    filterContainer.appendChild(btn);
+  });
+}
+
+function setFilter(category) {
+  currentFilter = category;
+  
+  // Opdater knapper
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  event.target.classList.add('active');
+  
+  generate();
+}
+
+function updateStats() {
+  const stats = document.getElementById('stats');
+  const categories = [...new Set(ORDSAMLING.map(w => w.kategori))];
+  stats.innerHTML = `
+    ${ORDSAMLING.length} ord fordelt over ${categories.length} kategorier
+  `;
+}
+
+function getFilteredWords() {
+  if (currentFilter === 'alle') {
+    return ORDSAMLING;
+  }
+  return ORDSAMLING.filter(w => w.kategori === currentFilter);
 }
 
 function generate() {
   const container = document.getElementById("words");
   container.innerHTML = "";
-
+  
   if (ORDSAMLING.length === 0) {
-    container.innerHTML = '<p style="text-align:center;">Indlæser ord...</p>';
+    container.innerHTML = '<div class="loading">Indlæser ord...</div>';
     return;
   }
-
-  const shuffled = [...ORDSAMLING]
+  
+  const filtered = getFilteredWords();
+  
+  if (filtered.length === 0) {
+    container.innerHTML = '<div class="loading">Ingen ord i denne kategori</div>';
+    return;
+  }
+  
+  const shuffled = [...filtered]
     .sort(() => 0.5 - Math.random())
-    .slice(0, 5);
+    .slice(0, 6);
+  
+  shuffled.forEach((w, index) => {
+    setTimeout(() => {
+      const div = document.createElement("div");
+      div.className = "word";
+      div.setAttribute('data-category', w.kategori);
+      div.innerHTML = `
+        <h2>${w.ord}</h2>
+        <span class="category-badge" data-category="${w.kategori}">${CATEGORY_NAMES[w.kategori] || w.kategori}</span>
+        <p>${w.forklaring}</p>
+      `;
+      container.appendChild(div);
+    }, index * 100);
+  });
+}
 
-  shuffled.forEach(w => {
+function generateAll() {
+  const container = document.getElementById("words");
+  container.innerHTML = "";
+  
+  if (ORDSAMLING.length === 0) {
+    container.innerHTML = '<div class="loading">Indlæser ord...</div>';
+    return;
+  }
+  
+  const filtered = getFilteredWords();
+  
+  filtered.forEach((w, index) => {
     const div = document.createElement("div");
     div.className = "word";
+    div.setAttribute('data-category', w.kategori);
     div.innerHTML = `
       <h2>${w.ord}</h2>
-      <div class="type">Begreb</div>
+      <span class="category-badge" data-category="${w.kategori}">${CATEGORY_NAMES[w.kategori] || w.kategori}</span>
       <p>${w.forklaring}</p>
     `;
     container.appendChild(div);
@@ -82,6 +375,5 @@ function generate() {
 
 window.onload = loadWords;
 </script>
-
 </body>
 </html>
